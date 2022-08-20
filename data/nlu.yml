@@ -1,0 +1,1383 @@
+version: "3.1"
+########################################## français #########################"
+nlu:
+- intent: greet_fr
+  examples: |
+    - bonjour
+    - Bonjour
+    - bjr
+    - salut
+    - slt
+    - salut toi 
+    - coucou
+    - bonjour, ça va 
+
+- intent: question_user_lang_en
+  examples: |
+    - What do you offer. 
+    - What you offer mr the bot. 
+    - What is it about. 
+    - What do you have to offer. 
+    - What you offer, Robot. 
+    - What you propose.
+    - Your proposal, Bot
+
+- intent: orange
+  examples: |
+    - orange
+    - opérateur orange
+
+- intent: tunisie_télécom
+  examples: |
+    - TT
+    - tunisie télécom
+    - télécom
+
+- intent: oreedoo
+  examples: |
+    - oreedoo
+    - Oreedoo
+
+- intent: offres_org
+  examples: |
+    - les offres disponibles chez orange
+    - offre de orange 
+    - offres disponibles à orange.
+    - les offres proposées chez orange.
+    - pouvez-vous me faire part des offres que vous offrez chez orange?
+    - est ce que je peux savoir quelles sont les offres diponibles 
+    - puis-je connaître vos offres?
+
+- intent: oui_plus_offres_org
+  examples: |
+    - oui, oui je veux bien plus d'offres 
+    - oui cela m'importe
+    - oui, bien sur
+    - oui 
+    - Oui, j'aimerais connaître d'autres offres.
+    - Oui, je veux en avoir plus.
+    - je veux en avoir plus.
+
+- intent: offre_sport_org
+  examples: |
+    - offre dans le domaine du sport  
+    - vous avez des offres pour les sportifs 
+    - Oui dans le sport stp
+    - Offre dans le domaine sportif.
+
+- intent: offre_music_org
+  examples: |
+    - offre dans le domaine de la musique  
+    - vous avez des offres pour les amateures de musqiue  
+    - est ce que vous disposez des offres dans le domaine musicale
+    - Musique 
+
+- intent: offre_food_org
+  examples: |
+    - offre d'alimentation  
+    - vous avez des offres culinaire
+    - Oui food offre
+
+- intent: oui_menu_principal
+  examples: |
+    - oui
+    - pouvez vous me donner le menu principal
+    - s'il vous plaît dites-moi le menu principal
+    - je veux revenir aux recommendation du debut
+    - Je voudrais revenir sur le menu que vous m'avez donné au début.
+    - je veux revenir au début stp.
+
+- intent: non_pas_autre_chose
+  examples: |
+    - non merci  
+    - non, je veux rien
+    - merci je veux rien
+    - non
+    - non je veux pas d'autre chose 
+    - pas d'autre question
+    - pas d'autre chose
+
+- intent: non_plus_offres_org
+  examples: |
+    - non merci 
+    - je n'ai pas besoin de plus d'offres 
+    - je ne veux pas 
+    - Je n'en ai plus besoin.
+    - Je ne veux pas de nouvelles offres.
+    - Non merci, Je ne veux plus de propositions.
+    - Je ne veux plus de propositions.
+
+- intent: oui_question_offres_org
+  examples: |
+    - oui j'ai des questions à propos quelques offres
+    - oui, j'ai des questions 
+    - oui mr j'ai quelques questions a poser
+    - Oui, j'ai des questions concernant certaines offres.
+    - J'ai quelques questions sur certaines offres.
+    - J'ai quelques questions à propos de certaines offres.
+    - J'ai quelques questions sur certaines offres.
+
+- intent: plus_info_offre_darbox_org
+  examples: |
+    - je veux des informations sur l'offre Darbox 
+    - Je veux en savoir plus sur l'offre de Darbox
+    - J'ai besoin d'informations sur l'offre de Darbox.
+    - Sur l'offre de Darbox 
+    - Je veux connaître plus sur l'offre de Darbox.
+
+- intent: question_offre_darbox_org
+  examples: |
+    - Comment faire pour profiter d'une meilleur connexion avec l'offre de Darbox
+    - Pour Darbox quel est la procédure a suivre pour profiter de l'offre
+    - Où je peux trouver les instructions a faire pour profiter de l'offre Darbox, on l'a fait en ligne ? 
+    - Instructions a faire pour Darbox ? 
+    - Où puis-je trouver les instructions pour profiter de l'offre Darbox, on l'a fait en ligne ?
+    - Comment puis-je trouver les instructions pour bénéficier de l'offre Darbox, ça se fait en ligne ?
+    - Où puis-je trouver les consignes pour profiter de l'offre Darbox ?
+    - Comment choisir le forfait que me correspond pour cette offre de Darbox
+    - Pour Darbox, quelle procédure doit-on suivre pour bénéficier de l'offre?
+    - Pour darbox, quelle est la procédure à suivre pour tirer bénéfice de l'offre.
+    - Comment choisir le forfait qui me correspond pour cette offre de darbox.
+
+- intent: plus_info_offre_flyboxPostpaye_org
+  examples: |
+    - je veux des informations sur l'offre du Flybox postpaye 
+    - Puis je posais des questions sur l'offre du Flybox postpye
+    - J'ai besoin d'informations sur l'offre de Flybox postpaye.
+    - Je vais vous poser des questions sur l'offre de Flybox postpaye
+    - L'offre du flybox postpaye
+    - Je veux en savoir plus à propos de l'offre du flybox postpaye.
+
+- intent: question_offre_flyboxPostpaye_org
+  examples: |
+    - Comment peut-on faire pour profiter de l'offre Flybox postpaye
+    - Est-ce que vous voulez me donner plus de détail sur l'offre du flybox postpaye
+    - Pour le Flybox postpaye, pouvez-vous me donner plus de détails.
+    - Pour le flybox postpaye, est ce que tu peux me donner plus d'informations
+    - Concernant le Flybox postpaye, comment faire pour profiter? 
+    - A propos de la flybox postpaye, comment en bénéficier ?
+    - Souhaitez-vous me donner plus de détails sur les offres de flybox postpayées
+    - Comment profiter de l'offre Flybox postpayé
+    - Pouvez-vous me donner plus de détails sur la Flybox postpayée ?
+
+- intent: plus_info_offre_GigaPlus_org
+  examples: |
+    - J'ai des questions à propos l'offre Giga plus 
+    - J'ai des questions concernant l'offre giga plus.
+    - J'ai des questions au sujet de l'offre Giga plus.
+    - je veux savoir plus sur l'offre giga plus
+    - L'offre Giga plus
+
+- intent: question_offre_GigaPlus_org
+  examples: |
+    - Comment peut-on faire pour profiter de l'offre Giga plus
+    - Comment profiter de l'offre Giga plus
+    - Comment puis-je trouver les instructions pour bénéficier de l'offre giga plus.
+    - Comment trouver des instructions pour bénéficier des offres giga plus
+    - Pour l'offre giga plus quel est la procédure a suivre pour profiter de l'offre
+    - Pour les offres Giga plus, quelle est la procédure pour utiliser l'offre
+    - Où puis-je trouver les consignes pour profiter de l'offre giga plus ?
+    - Où je peux trouver les instructions pour utiliser l'offre Giga plus ?
+
+- intent: plus_info_offre_Hajj_org
+  examples: |
+    - J'ai des questions à propos l'offre du hajj 
+    - J'ai des questions concernant l'offre de Hajj.
+    - J'ai des questions au sujet de l'offre de Hajj.
+    - J'ai des questions au sujet de l'offre de Hajj que vous venez de citer.
+    - je veux savoir plus sur l'offre giga plus
+    - L'offre Giga plus
+
+- intent: question_offre_Hajj_org
+  examples: |
+    - Comment peut-on faire pour profiter de l'offre du hajj
+    - Comment profiter de l'offre du Hajj
+    - Comment puis-je trouver les instructions pour bénéficier de l'offre du Hajj.
+    - Où je peux trouver les instructions pour profiter de l'offre de hajj ?
+    - Concernant l'offre du Hajj, comment faire pour en profiter ? 
+    - Pour l'offre du Hajj quels sont les instructions à suivre pour profiter 
+    - Pour le hajj, quelle procédure doit-on suivre pour bénéficier de l'offre?
+
+- intent: oui_autre_question_org
+  examples: |
+    - oui, j'ai d'autres questions 
+    - Oui, j'aimerais poser d'autres questions.
+    - J'ai d'autres questions à poser.
+    - J'ai encore d'autres questions.
+
+- intent: non_autre_question
+  examples: |
+    - non, merci  
+    - non j'ai pas des questions
+    - Non, je n'en ai pas.
+    - Non, je n'ai rien à vous demander.
+    - non j'ai pas 
+    - Pas d'autres questions merci
+    - Merci j'ai pas d'autre question.
+
+- intent: promotions_org
+  examples: |
+    - promotions dispo 
+    - des promotions disponible
+    - quels sont vos promotions
+    - je veux savoir plus sur les promotions disponibles
+    - J'aimerais en savoir davantage au sujet des promotions offertes.
+    - Je souhaite en savoir plus sur les promotions à votre disposition.
+
+- intent: question_promotions_org
+  examples: |
+    - Avez-vous une liste des iPhones en promotions ? 
+    - Vous avez une liste des iPhone 13 en solde ?
+    - Est ce que vous avez la liste d'iPhone 13 qui sont en promo ?
+    - Disposez-vous de la liste des iPhone 13 en vente ?
+    - Vous avez une liste des iPhone13 à vendre ?
+    - Pouvez-vous me procurer la liste des iphones 13 qui sont disponibles en remise 
+    - Est ce que vous disposez de la liste d'iphone en promo
+
+- intent: jeux_org
+  examples: |
+    - jeux disponibles.
+    - je veux savoir plus sur les jeux disponibles chez vous
+    - des jeux disponible
+    - quels sont les jeux dispo.
+    - Je désire en savoir plus sur les jeux proposés.
+    - quels sont les jeux que vous offerez
+    - Vous offrez quoi comme jeux ?
+    - Qu'est-ce que vous proposez comme jeux 
+
+- intent: oui_question_jeu
+  examples: |
+    - oui, j'ai des questions 
+    - Oui, j'aimerais poser des questions à propos les jeux que vous venez de citez.
+    - J'ai des questions à poser sur ces jeux.
+    - oui je veux poser des questions.
+    - oui, j'ai des questions sur les jeux.
+    - J'ai des questions à poser en ce qui concerne ces jeux.
+    - Oui des questions en ce qui concerne les jeux.
+
+- intent: question_jeu_org
+  examples: |
+    - Pouvez-vous nous donner plus de détails sur les offres des jeux.
+    - Avez-vous des informations plus détaillées sur les offres des jeux.
+    - Avez-vous des liens directs pour accéder aux jeux.
+    - Avez-vous des informations plus détaillées sur les offres des jeux.
+    - Avez-vous des liens pour accéder directement aux jeux.
+    - Existe-t-il des liens directs pour accéder aux jeux?
+    - Avez-vous un lien direct vers les jeux.
+    - vous avez un lien direct pour accéder aux jeux.
+    - Possédez-vous des liens pour voir les jeux directement.
+    - Disposez-vous de liens pour accéder aux jeux directement.
+    - Existe-t-il des instructions à suivre pour jouer.
+    - Il ya des instructions à faire afin de jouer les jeux.
+    - l ya des instructions à faire pour pouvoir jouer les jeux.
+    - Existe-t-il des instructions pour être en mesure de jouer les jeux.
+
+- intent: gaming_org
+  examples: |
+    - les offres disponible chez orange dans le gaming
+    - offre de gaming chez orange  
+    - offres disponibles à orange en gaming.
+    - offres disponibles dans le gaming.
+    - offres disponibles à orange en gaming.
+
+- intent: autres_informations_org
+  examples: |
+    - avez vous d'autres informations utiles ? 
+    - oui, je veux plus d'infos
+    - oui, plus d'infos.
+
+####################################### Ooredoo ######################################
+
+- intent: offres_ored
+  examples: |
+    - Les offres disponibles chez Ooredoo
+    - les offres proposées chez ooredoo.
+    - Offres proposées à ooredoo.
+    - Offres disponibles auprès de ooredoo.
+    - pouvez-vous me faire part des offres que vous offrez?
+    - est ce que je peux savoir quelles sont les offres diponibles.
+    - puis-je connaître vos offres?
+    - puis-je savoir quelles offres sont à votre disposition.
+    - je veux me renseigner sur les offres offertes par vous?
+
+- intent: oui_plus_offres
+  examples: |
+    - oui, oui je veux bien plus d'offres 
+    - oui cela m'importe
+    - oui, bien sur
+    - oui 
+    - Oui, j'aimerais connaître d'autres offres.
+    - Oui, je veux en avoir plus.
+    - je veux en avoir plus.
+
+- intent: offre_pack_4G_ored
+  examples: |
+    - oui, oui je veux bien plus d'offres 
+    - oui cela m'importe
+    - oui, bien sur
+
+- intent: oui_question_offre_pack4G_ored
+  examples: |
+    - comment peut-on faire le choix entre les differents pack 
+    - comment effectuer le choix entre les différents packs.
+    - Est-ce qu'il y a une différence de la qualité de connexion entre les différents packs offerts
+    - Y a-t-il une différence au niveau de la qualité de la connexion entre les différents packs proposés.
+    - Existe-t-il une différence dans la qualité de la connexion entre les divers packs proposés.
+    - Est-ce qu'il existe un pack dont il offre plus de 100 Go d'internet
+    - Existe-t-il un pack qui offre plus de 100 Go d'Internet.
+    - Y a-t-il un forfait dont il offre plus de 100 Go d'Internet.
+    - Est ce qu'il y a un packou on peut profiter de plus de 100 Go d'internet.
+    - Existe t il une différence entre ces différents packs proposés.
+
+- intent: oui_bien_repondu
+  examples: |
+    - oui j'ai bien reçu ma réponse
+    - Oui, j'ai obtenu une réponse.
+    - C'est exact, j'ai reçu ma réponse.
+    - Oui, j'ai bien compris.
+    - Parfait, j'ai eu la réponse.
+    - ouiii j'ai la bonne réponse merci
+
+- intent: non_pas_repondu
+  examples: |
+    - non, c'est pas sur ça que j'ai posé a question
+    - non, ce n'est pas sur ça que j'ai posé a question
+    - Ce n'est pas ce que je vous ai demandé.
+    - Non, pas du tout.
+    - non.
+    - Ce n'est pas le sujet de ma question.
+    - Non, ce n'est pas ce qui m'intéresse.
+
+- intent: offre_adsl_vdsl_ored
+  examples: |
+    - oui, oui je veux bien plus d'offres 
+    - oui cela m'importe
+    - oui, bien sur
+
+- intent: offre_do_ored
+  examples: |
+    - oui, oui je veux bien plus d'offres 
+    - oui cela m'importe
+    - oui, bien sur
+
+- intent: non_plus_offres
+  examples: |
+    - non merci 
+    - je n'ai pas besoin de plus d'offres 
+    - je ne veux pas 
+    - Je n'en ai plus besoin.
+    - Je ne veux pas de nouvelles offres.
+    - Non merci, Je ne veux plus de propositions.
+    - Je ne veux plus de propositions.
+
+- intent: oui_question_offres
+  examples: |
+    - oui j'ai des questions à propos quelques offres
+    - oui, j'ai des questions 
+    - oui mr j'ai quelques questions a poser
+    - Oui, j'ai des questions concernant certaines offres.
+    - J'ai quelques questions sur certaines offres.
+    - J'ai quelques questions à propos de certaines offres.
+    - J'ai quelques questions sur certaines offres.
+  
+- intent: offre_fete_des_meres_ored
+  examples: |
+    - Les offres disponibles la fete des meres chez vous. 
+    - les offres proposées pour la fete des méres.
+    - Puis-je savoir quelles sont les offres pour la fête des Mères chez ooredoo.
+    - est ce que je peux savoir quelles sont les offres diponibles chez pour la fete des méres.
+    - Offres proposées à la fête des Mères.
+    - Offres disponibles à la fête des Mères.
+
+- intent: oui_question_offre_fete_mere
+  examples: |
+    - oui, je veux savoir quelques details sur les offres de la fete des meres. 
+    - Je veux des détails sur les offres de fete des méres.
+    - Oui, je veux en savoir un peu plus sur les offres de la fete des meres.
+    - Oui, je souhaite connaître quelques détails sur les offres de la fete des meres.
+    - oui, j'ai des questions.
+
+- intent: question_offre_1_ored
+  examples: |
+    - je veux savoir des détails sur la première offre  
+    - Je veux avoir des détails sur la première offre.
+    - Donnez-moi les détails de la première offre.
+    - Donnez-moi les détails sur la première offre.
+    - Je veux les détails de la 1 ere offre.
+    - oui, des détails sur la 1ére offre.
+
+- intent: detail_question_offre_1_ored
+  examples: |
+    - comment faire pour profiter de l'offre et bénéficiez de la réduction sur le service Photo by Ooredoo
+    - comment tirer profit de cette offre.
+    - Comment tirer avantage de cette offre et imprimer les photos de nos mamans.
+    - comment utiliser l'offre de l'imprétion des photos, est ce que on peut la faire en ligne.
+    - On fait quoi pour bénéficier de cette offre.
+    - Comment puis-je profiter de l'offre ?
+    - quoi faire pour profiter du service photo by ooredoo.
+    - qu'est ce qu'on fait à fin de tirer profit de cette offre.
+    - Quels sont les instructions à suivre pour tirer profit de cette offre.
+
+- intent: question_offre_2_ored
+  examples: |
+    - je veux savoir des détails sur la deuxième offre  
+    - Je veux avoir des détails sur la deuxième offre.
+    - Donnez-moi les détails de la 2 eme offre.
+    - Donnez-moi les détails sur la deuxième offre.
+    - Je veux les détails de la 2 ere offre.
+    - oui, des détails sur la 2 éme offre.
+
+- intent: detail_question_offre_2_ored
+  examples: |
+    - comment faire pour profiter de l'offre et gangner ces cadeaux.
+    - comment tirer profit de ces cadeaux.
+    - Je veux gagner un de ces cadeaux.
+    - Et comment gagner un de ces cadeaux.
+    - comment tirer parti de l'offre et remporter ces cadeaux.
+    - Comment tirer avantage de cette offre.
+    - On fait quoi pour bénéficier de cette offre.
+    - Comment puis-je profiter de l'offre ?
+    - qu'est ce qu'on fait à fin de tirer profit de cette offre.
+    - Quels sont les instructions à suivre pour tirer profit de cette offre.
+
+- intent: jeux_ored
+  examples: |
+    - quels sont les jeux que vous offerez
+    - Vous offrez quoi comme jeux ?
+    - Quels sont vos jeux ?
+    - Quels jeux avez-vous à offrir?
+    - Vous offrez quoi comme jeux ?
+    - Qu'est-ce que vous proposez comme jeux 
+
+####################################### Tunisie télécom ######################################
+
+- intent: offres_tt
+  examples: |
+    - Les offres disponibles chez tunisie télécom.
+    - les offres proposées chez vous.
+    - Offres proposées à TT.
+    - Offres disponibles auprès de tunisie télécom.
+    - pouvez-vous me faire part des offres que vous offrez?
+    - est ce que je peux savoir quelles sont les offres diponibles.
+    - puis-je connaître vos offres?
+    - puis-je savoir quelles offres sont à votre disposition.
+    - je veux me renseigner sur les offres offertes par vous?
+    - quelles sont les offres qui sont disponibles chez TT.
+
+- intent: non_pas_questions
+  examples: |
+    - non merci 
+    - je n'ai pas besoin d'autres questions 
+    - non,j'ai pas des questions.
+    - non 
+    - pas de question.
+    - j'ai pas de questions.
+    - Non non merci.
+    - J'ai aucune question à poser.
+    - Je n'en ai aucune.
+    - Je n'ai plus de questions.
+
+- intent: offre_fete_des_meres_tt
+  examples: |
+    - Les offres disponibles la fete des meres chez vous. 
+    - les offres proposées pour la fete des méres.
+    - Puis-je savoir quelles sont les offres pour la fête des Mères.
+    - est ce que je peux savoir quelles sont les offres diponibles chez pour la fete des méres.
+    - Offres proposées à la fête des Mères.
+    - Offres disponibles à la fête des Mères.
+    - quelles sont les offres de la fete des meres disponibles.
+
+- intent: jeux_tt
+  examples: |
+    - quels sont les jeux que vous offerez
+    - Vous offrez quoi comme jeux ?
+    - Quels sont vos jeux ?
+    - Quels jeux avez-vous à offrir?
+    - Vous offrez quoi comme jeux chez telecom?
+    - Qu'est-ce que vous proposez comme jeux.
+    - je veux savoir plus sur les jeux disponibles chez vous
+    - des jeux disponible
+    - quels sont les jeux dispo.
+
+- intent: question_jeu_tt
+  examples: |
+    - quels sont les jeux que vous offerez
+    - Vous offrez quoi comme jeux ?
+    - Quels sont vos jeux ?
+    - les jeux disponibles chez vous.
+    - jeux dispo
+    - Jeux diponibles
+    - les jeux dispo
+
+- intent: question_jeu_1_tt
+  examples: |
+    - je veux savoir des détails sur la première offre  
+    - Je veux avoir des détails sur la première offre.
+    - Donnez-moi les détails de la première offre.
+    - Donnez-moi les détails sur la première offre.
+    - Je veux les détails de la 1 ere offre.
+    - oui, des détails sur la 1ére offre.
+
+- intent: detail_question_jeu_1_tt
+  examples: |
+    - comment profiter du jeu edenya fan ?
+    - Comment faire pour profiter du jeu edenya fan?
+    - Comment peut-on jouer au jeu edenya fan
+    - pour le jeu edenya fan, comment proceder pour en profiter ? 
+    - pour le jeu edenya fan, comment procéder pour tirer parti de celui-ci.
+    - pour le jeu edenya fan, comment procéder pour en tirer profit.
+    - Je fais comment pour jouer le jeu edenya fan ?
+    - Comment suis-je supposé jouer au jeu du edenya fan ?
+    - Comment jouer à ce jeu ?
+    - Comment suis-je censé jouer ?
+    - On cencé jouer comment ce jeu ? 
+    - est ce que vou avez un lien ou des instructions à suivre pour jour le jeu ?
+    - Avez-vous un lien ou des consignes à suivre pour le jeu?
+
+- intent: question_jeu_2_tt
+  examples: |
+    - je veux savoir des détails sur la Deuxième offre  
+    - Je veux avoir des détails sur la deuxième offre.
+    - Donnez-moi les détails de la deuxième offre.
+    - Donnez-moi les détails sur la Deuxième offre.
+    - Je veux les détails de la 1 éme offre.
+    - oui, des détails sur la 2éme offre.
+
+- intent: detail_question_jeu_2_tt
+  examples: |
+    - comment profiter du jeu play yalla ?
+    - Comment faire pour profiter du jeu play yalla?
+    - Comment peut-on jouer au jeu play yalla
+    - pour le jeu play yalla, comment proceder pour en profiter ? 
+    - pour le jeu play yalla, comment procéder pour tirer parti de celui-ci.
+    - pour le jeu play yalla, comment procéder pour en tirer profit.
+    - Je fais comment pour jouer le jeu play yalla ?
+    - Comment suis-je supposé jouer au jeu du play yalla ?
+    - Comment jouer à ce jeu ?
+    - Comment suis-je censé jouer ?
+    - On cencé jouer comment ce jeu ? 
+    - est ce que vou avez un lien ou des instructions à suivre pour jour le jeu ?
+    - Avez-vous un lien ou des consignes à suivre pour le jeu?
+
+- intent: question_jeu_3_tt
+  examples: |
+    - je veux savoir des détails sur la Troisième offre  
+    - Je veux avoir des détails sur la Troisième offre.
+    - Donnez-moi les détails de la troisième offre.
+    - Donnez-moi les détails sur la troisième offre.
+    - Je veux les détails de la 3 eme offre.
+    - oui, des détails sur la 3éme offre.
+
+- intent: detail_question_jeu_3_tt
+  examples: |
+    - comment profiter du jeu Hal Ta3lem ?
+    - Comment faire pour profiter du jeu Hal Ta3lem ? 
+    - Comment peut-on jouer au jeu Hal Ta3lem
+    - pour le jeu Hal Ta3lem, comment proceder pour en profiter ? 
+    - pour le jeu Hal Ta3lem, comment procéder pour tirer parti de celui-ci.
+    - pour le jeu Hal Ta3lem, comment procéder pour en tirer profit.
+    - Je fais comment pour jouer le jeu Hal Ta3lem ?
+    - Comment suis-je supposé jouer au jeu du Hal Ta3lem ?
+    - Comment jouer à ce jeu ?
+    - Comment suis-je censé jouer ?
+    - On cencé jouer comment ce jeu ? 
+    - est ce que vou avez un lien ou des instructions à suivre pour jour le jeu ?
+    - Avez-vous un lien ou des consignes à suivre pour le jeu?
+
+- intent: question_jeu_4_tt
+  examples: |
+    - je veux savoir des détails sur la Quatrième offre  
+    - Je veux avoir des détails sur la quatrième offre.
+    - Donnez-moi les détails de la quatrième offre.
+    - Donnez-moi les détails sur la Quatrième offre.
+    - Je veux les détails de la 4 éme offre.
+    - oui, des détails sur la 4 eme offre.
+
+- intent: detail_question_jeu_4_tt
+  examples: |
+    - comment profiter du jeu gameloft ?
+    - Comment faire pour profiter du jeu gameloft ? 
+    - Comment peut-on jouer au jeu gameloft
+    - pour le jeu gameloft, comment proceder pour en profiter ? 
+    - pour le jeu gameloft, comment procéder pour tirer parti de celui-ci.
+    - pour le jeu gameloft, comment procéder pour en tirer profit.
+    - Je fais comment pour jouer le jeu gameloft ?
+    - Comment suis-je supposé jouer au jeu du gameloft ?
+    - Comment jouer à ce jeu ?
+    - Comment suis-je censé jouer ?
+    - On cencé jouer comment ce jeu ? 
+    - est ce que vou avez un lien ou des instructions à suivre pour jour le jeu ?
+    - Avez-vous un lien ou des consignes à suivre pour le jeu?
+
+- intent: autres_informations_tt
+  examples: |
+    - Est-ce vous disposer avec d'autres informations utiles
+    - Est que vous disposez avec d'autres informations utiles.
+    - Vous en disposer avec d'autres informations utiles.
+    - S'agit-il de disposer avec d'autres informations utiles.
+    - vous avez d'autre infos ? 
+
+- intent: remerciment_info
+  examples: |
+    - Je vous remercie pour ces renseignements fort utiles.
+    - Merci pour ces info tres utile
+    - Merci pour ces informations précieuses.
+    - merci pour ces infos j'en savais pas.
+    - Merci pour l'information, je n'étais pas au courant.
+    - Merci de m'avoir donné l'info.
+    - je te remercie de m'informer, je ne savais pas.
+
+- intent: devinette_tt
+  examples: |
+    - Est-ce que vous disposez des jeux de devinettes
+    - Vous avez des devinettes.
+    - Vous n'avez pas de devinettes.
+    - je veux des jeux de devinette.
+########################################## Anglais #########################"
+####### Orange
+
+- intent: greet_en
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: offres_org_en
+  examples: |
+    - offers available in orange
+    - offers available under orange
+    - deals available on orange.
+    - offers offered by orange.
+    - offers offered through orange.
+    - can you tell me about the offers you offer at orange?
+    - Can you tell me what offers you are offering at orange?
+    - What do you offer in orange?
+    - What do you suggest ?
+    - What do you suggest using orange?
+    - may I know your offers?
+    - Can I ask what your offers are?
+    - May I ask which offers you have?
+
+- intent: oui_plus_offres_org_en
+  examples: |
+    - yes, I really want more offers
+    - definitely i want more offers.
+    - i'm looking for more offers 
+    - I want to find out more.
+    - yes of course
+    - yes, sure
+    - Yes I do
+    - I would like to know other offers.
+    - Yes, I want more.
+    - I need more.
+
+- intent: offre_sport_org_en
+  examples: |
+    - offer in the field of sports
+    - you have offers for athletes
+    - you have deals for athletes.
+    - Yes on sport please
+    - About sports please
+    - Offer in the sports field.
+    - offers in the sports sector.
+
+- intent: offre_music_org_en
+  examples: |
+    - offer in the field of music
+    - offers in the musical field
+    - offers for music
+    - do you have offers for music lovers ? 
+    - do you have musical opportunities ? 
+    - Do you have any offers in the music sector ? 
+    - Music
+
+- intent: offre_food_org_en
+  examples: |
+    - food stuff
+    - you have food offers
+    - you have food deals
+    - food offer
+    - Yes, food offers please.
+
+- intent: oui_menu_principal_en
+  examples: |
+    - Yes I do
+    - can you give me the main menu
+    - can uou provide me with the main menu ? 
+    - please give me the main menu
+    - I want to go back to the recommendations from the beginning
+    - i would like to return from the start. 
+    - I want to come back to the first recommendations.
+    - I would like to go back to the menu you gave me at the start.
+    - I want to go back to your original menu.
+
+- intent: non_pas_autre_chose_en
+  examples: |
+    - no thanks
+    - no thank you 
+    - thank you 
+    - no, I don't want anything
+    - Thank you, I don't need anything
+    - Nope
+    - no I don't want anything else
+    - no further questions
+    - nothing else
+
+- intent: non_plus_offres_org_en
+  examples: |
+    - no thanks
+    - I don't need more offers
+    - I do not want
+    - No more offers are needed
+    - I don't need it anymore.
+    - I don't want new offers.
+    - No thank you, I don't want any more proposals.
+    -  No thanks, I don't want any more suggestions.
+
+- intent: oui_question_offres_org_en
+  examples: |
+    - yes I have questions about some offers
+    - yes, i have questions regarding some of the offers.
+    - yes, I have questions about some of them.
+    - I do have a few questions about some offers.
+    - i have a couple of questions on some of the deals.
+    - I have a few questions about some offers.
+
+- intent: plus_info_offre_darbox_org_en
+  examples: |
+    - I want information about the Darbox offer
+    - i would like to know about the Darbox offer
+    - I want some information on Darbox offer
+    - I need information about Darbox's offer.
+    - On Darbox's offer
+    - I want to know more about Darbox's offer.
+
+- intent: question_offre_darbox_org_en
+  examples: |
+    - How to take advantage of a better connection with the Darbox offer
+    - For Darbox what is the procedure to follow to take advantage of the offer
+    - Where can I find the instructions to take advantage of the Darbox offer, did we do it online?
+    - Instructions to do for Darbox?
+    - Where can I find the instructions to take advantage of the Darbox offer, we did it online?
+    - How can I find the instructions to benefit from the Darbox offer, is it done online?
+    - Where can I find instructions for taking advantage of the Darbox offer?
+    - How to choose the package that suits me for this Darbox offer
+    - For Darbox, what procedure must be followed to benefit from the offer?
+    - For darbox, what is the procedure to take advantage of the offer.
+    - How to choose the package that suits me for this darbox offer.
+
+- intent: plus_info_offre_flyboxPostpaye_org_en
+  examples: |
+    - I want information on the Flybox postpaid offer
+    - I would like to find out more about the postpaid flybox offer.
+    - I'll ask you about the post-paid Flybox offer. 
+    - I need information about the Flybox postpaid offer.
+    - I want details of Flybox's postpaid offer.
+    - I am going to ask you about the offer of Flybox postpaid
+    - The postpaid flybox offer
+    - The offer of postpaid flyboxes
+    - I want to know more about the postpaid flybox offer.
+
+- intent: question_offre_flyboxPostpaye_org_en
+  examples: |
+    - How can I take advantage of the Flybox postpaid offer?
+    - Can you tell me more about postpaid flybox deals ? 
+    - Do you want to give me more details on the postpaid flybox offer
+    - For the postpaid Flybox, can you give me more details.
+    - how can the postpaid flybox be used
+    - About the postpaid flybox, how to take advantage from it ?
+    - Would you like to give me more details about postpaid flybox offers
+    - How to take advantage of the postpaid Flybox offer
+    - What about the postpaid flybox
+
+- intent: plus_info_offre_GigaPlus_org_en
+  examples: |
+    - I have some questions regarding Giga plus. 
+    - I have questions about the giga plus offer.
+    - I would like to find out more about the giga plus deal
+    - I want to ask about giga plus 
+    - Could you tell me more about giga plus offer
+    - The Giga plus offer
+
+- intent: question_offre_GigaPlus_org_en
+  examples: |
+    - How can I take advantage of the Giga plus offer?
+    - How to take advantage of the Giga plus deal
+    - How can I find the instructions to benefit from the giga plus offer.
+    - How to find instructions to benefit from giga plus offers
+    - For the giga plus offer, what is the procedure to follow to take advantage of the offer?
+    - For the giga plus offer, what is the procedure to follow tin order to benefit from the offer ? 
+    - For Giga plus offers, what is the procedure for using the offer
+    - Where can I find instructions for taking advantage of the giga plus offer?
+    - Where can I find the instructions for using the Giga plus offer?
+    - For giga plus offer, how we can use it ? 
+
+- intent: plus_info_offre_Hajj_org_en
+  examples: |
+    - I have questions about the hajj offer
+    - I have some questions regarding the Hajj offer.
+    - I want to ask about the Hajj offer.
+    - I have questions about the Hajj offer you just mentioned.
+    - I have some questions about the hajj offer you just referred to.
+
+- intent: question_offre_Hajj_org_en
+  examples: |
+    - How can we take advantage of the hajj offer
+    - How can we benefit from Hajj's offer
+    - How can I get the instructions to benefit from the Hajj offer.
+    - Where can I find the instructions to take advantage of the hajj offer?
+    - where do i find instructionsfor taking advantage of the hajj offer ? 
+    - Regarding the Hajj offer, how to take advantage of it?
+    - For the Hajj offer what are the instructions to follow ?
+    - For the hajj, what procedure must be followed to benefit from it ?
+
+- intent: oui_autre_question_org_en
+  examples: |
+    - yes, I have other questions
+    - Yes, I would like to ask other questions.
+    - I have other questions to ask.
+    - I would like to ask more
+    - i want to ask a few more questions
+    - yes, i have others
+
+- intent: non_autre_question_en
+  examples: |
+    - no thanks
+    - no I don't have any other questions
+    - No I do not have any questions.
+    - No, I have nothing to ask you.
+    - No further questions thank you
+    - Thank you, I have no other questions.
+
+- intent: jeux_org
+  examples: |
+    - promotions available
+    - what promotions do you have ? 
+    - I want to know more about the promotions at your disposal.
+    - what are your promotions ? 
+    - I want to know more about the promotions available
+    - I would like to know more about the promotions offered.
+    - I would like to know more about the promotions available.
+
+- intent: question_promotions_org_en
+  examples: |
+    - Do you have a list of iPhones on sale?
+    - Do you have the list of iPhone 13 that are on sale?
+    - Please send me the list of available Iphones 13 with a discount.
+    - Can you send me the list of available Iphones 13 with a discount.
+    - Can you get me the list of iphones 13 which are available in discount
+    - Do you have the promo iphone list
+
+- intent: jeux_org_en
+  examples: |
+    - games available.
+    - I want to know more about the games available from you
+    - games available
+    - what games are available.
+    - I want to find out more about what games that we have access to ? 
+    - I would like to find out more about the games available
+    - What games do you offer?
+    - Which games are you offering?
+
+- intent: oui_question_jeu_en
+  examples: |
+    - Yes, I would like to ask about the games you just mentioned.
+    - I have questions about these games.
+    - yes I want to ask questions.
+    - yes, I have questions about the games.
+    - I have some questions regarding these games.
+    - Yes questions regarding games.
+    - yes questions concerning games. 
+
+- intent: question_jeu_org_en
+  examples: |
+    - Can you give us more details about the offers of the games.
+    - can you provide more details about games
+    - Do you have more details about the game offers.
+    - Do you have direct links to access the games.
+    - Have you got any direct links to games ? 
+    - Do you have more detailed information on game deals.
+    - Are there any direct links to games? 
+    - Are there direct links to access the games?
+    - Do you have a direct link to the games.
+    - you have a direct link to access the games.
+    - Do you have links to see the games directly.
+    - Do you have links to access the games directly.
+    - Are there instructions to follow to play.
+    - There are instructions to do in order to play the games ? 
+    - Are there any instructions to follow in order to be able to play the games ?
+
+- intent: gaming_org_en
+  examples: |
+    - gaming offer at orange
+    - offers available in gaming.
+    - offers available through orange in gaming.
+    - offers available at orange in gaming.
+
+- intent: autres_informations_org_en
+  examples: |
+    - do you have any other useful information?
+    - Is there any other useful information ? 
+    - Do you have more helpful info ?
+    - yes, I want additional information
+    - yes, more info.
+    - Of course, more information.
+
+############################# Ooredoo en
+
+- intent: offres_ored_en
+  examples: |
+    - The offers available at Ooredoo
+    - the offers offered by ooredoo.
+    - what offers do you have ? 
+    - Please tell me about your offers .
+    - can you tell me about the offers you offer?
+    - can I know what offers are available.
+    - i'm interested in your offers
+    - may I know what offers are available to you.
+    - I want to find out about the offers offered by you?
+
+- intent: oui_plus_offres_en
+  examples: |
+    - yes, I really want more offers
+    - yes, i would like more offers
+    - yes of course
+    - Yes I do
+    - Yes, I would like to know other offers.
+    - Yes, I want more.
+
+- intent: offre_pack_4G_ored_en
+  examples: |
+    - yes, I want to know more about the 4g pack
+    - I would like to learn more about the 4g pack.
+    - I want more information about the 4g offer.
+    - I need to know more about the 4g pack.
+
+- intent: oui_question_offre_pack4G_ored_en
+  examples: |
+    - how can we choose between the different packs
+    - how to select from these different packs. 
+    - how to choose between the different packs.
+    - Is there a difference in connection quality between the different packs offered?
+    - Is there a difference in the quality of connections between the different packages provided?
+    - Is there a difference in the quality of the connection between the various packs offered.
+    - Is there a pack of which it offers more than 100 GB of internet
+    - Is there a package that offers more than 100 GB of Internet.
+    - Is there a plan which it offers more than 100 GB of Internet.
+    - Is there a pack or we can enjoy more than 100 GB of internet.
+    - Is there a difference between these different packs offered.
+
+- intent: oui_bien_repondu_en
+  examples: |
+    - yes I received my answer
+    - I got my response.
+    - Yes, I got the answer.
+    - i did get my response, thank you.
+    - Yes I understood.
+    - Perfect, I got the answer.
+    - Great i have the answer.
+    - yes I have the right reply thank you
+
+- intent: non_pas_repondu_en
+  examples: |
+    - No, that's not what I asked about.
+    - this is not what i asked for 
+    - No, i have not asked for that.
+    - That's not what I asked you.
+    - that's not my question.
+    - Nope.
+    - No
+    - This is not the subject of my question.
+    - that's not what i'm interested in.
+    - No, that's not what interests me.
+    - i have no interest in that.
+    
+- intent: offre_adsl_vdsl_ored_en
+  examples: |
+    - yes, I want to know more about the adsl and vdsl offer.
+    - I would like to learn more about the adsl and vdsl offer.
+    - I want more information about the adsl and vdsl offer.
+    - I need to know more about the adsl and vdsl offer.
+
+- intent: offre_do_ored_en
+  examples: |
+    - yes, I want to know more about the do offer.
+    - I would like to learn more about the do offer.
+    - I want more information about the do offer.
+    - I need to know more about the do offer.
+
+- intent: non_plus_offres_en
+  examples: |
+    - no thanks
+    - I don't need more offers
+    - I do not want
+    - No more offers are needed.
+    - I don't need any other deals.
+    - I don't want new offers.
+    - No thank you, I don't want any more proposals.
+
+- intent: oui_question_offres_en
+  examples: |
+    - yes I have questions about some offers
+    - yes, I have a few questions to ask.
+    - there are a couple of questions about some deals
+    - Yes, I have questions regarding some of the offers.
+    - I do have a few questions on some offers.
+    - I have a few questions about some deals.
+    - I have a number of questions on certain offers.
+
+- intent: offre_fete_des_meres_ored_en
+  examples: |
+    - offers available on Mother's Day.
+    - offers proposed for Mother's Day.
+    - Mom's day offers.
+    - Mother's day deals.
+    - May I know what are the offers for Mother's Day at ooredoo.
+    - can i ask about offers for mother's day in ooredoo.
+    - can I know what offers are available for Mother's Day.
+    - can i ask what mother's day offers are available ? 
+    - Offers for Mother's Day.
+    - Offers during on Mother's Day.
+
+- intent: oui_question_offre_fete_mere_en
+  examples: |
+    - yes, I want to know some details about the mothers Day offers.
+    - I want details on Mother's Day offers.
+    - Yes, I want to know a little more about the Mother's Day offers.
+    - I would like to know more details about the Mother's Day offers.
+    - i'm curious about mother's day offers.
+    - ys im interested in knowing a little bit more about mothers day offers.
+    - yes, I have some questions.
+    - I have a few questions.
+
+- intent: question_offre_1_ored_en
+  examples: |
+    - I want to know details about the first offer
+    - I would like to know the details of the first offer.
+    - i'm interested in the details of the first offer
+    - Give me the details of the first offer.
+    - tell me about the first deal
+    - I need some details of the 1st offer.
+    - yes, details on the 1st offer.
+
+- intent: detail_question_offre_1_ored_en
+  examples: |
+    - how to take advantage of the offer and benefit from the discount on the Photo by Ooredoo service
+    - how to take advantage of this offer.
+    - How to take advantage of this offer and print pictures of our mothers.
+    - how to benefit from this offer and print pictures of our moms
+    - how to use the photo printing offer, can it be done online.
+    - What do we do to benefit from this offer?
+    - How to benefit from the photo service through ooredoo ? 
+    - what needs to be done to use the ooredoo photo service ? 
+    - what to do to take advantage of the photo service by ooredoo.
+    - have you some guidelines on how we take advantage of this offer?
+    - What are the instructions to follow to take advantage of this offer.
+    - What are the steps to take to benefit from this offer?
+
+- intent: question_offre_2_ored_en
+  examples: |
+    - I want to know details about the second offer
+    - I would like to know the details of the second offer
+    - i'm interested in the details of the second offer
+    - Give me the details of the second offer
+    - tell me about the second offer
+    - I want the details of the 2 nd offer.
+    - yes, details on the 2nd offer
+
+- intent: detail_question_offre_2_ored_en
+  examples: |
+    - how to take advantage of the offer and win these gifts.
+    - how to benefit from the offer and obtain these gifts.
+    - I want to win one of these gifts.
+    - i would like to get one of those gifts, how to proceed ,
+    - And how to win one of those gifts.
+    - how do we win those gifts ? 
+    - What do we do to benefit from this offer?
+    - How can I take advantage of the offer?
+    - what do we do to take advantage of this offer.
+    - What are the instructions to follow to take advantage of this offer.
+    - what are the steps to take to benefit from this offer? 
+
+- intent: jeux_ored_en
+  examples: |
+    - what games do you offer
+    - Which games are available ? 
+    - What games do you have to offer?
+    - What games do you offer?
+    - What games can you provide ?
+
+############################# TT en
+
+- intent: offres_tt_en
+  examples: |
+    - offers available at Tunisia Telecom.
+    - your offers
+    - deals that you offer.
+    - Offers available from Tunisia Telecom.
+    - can you tell me about the offers you offer?
+    - can I know what offers are available.
+    - may I know your offers?
+    - what offers do you have ? 
+    - What about your offers ? 
+    - i would like to hear your offers ? 
+    - I want to find out about the offers offered by you?
+    - what offers are available at TT.
+
+- intent: non_pas_questions_en
+  examples: |
+    - no thanks
+    - I don't need any more questions
+    - No, I don't have any questions.
+    - Nope
+    - i don't have any questions.
+    - I have no questions.
+    - No, thank you.
+    - I have no questions to ask.
+    - I have no more questions.
+
+- intent: offre_fete_des_meres_tt_en
+  examples: |
+    - The offers available on Mother's Day.
+    - the offers proposed for Mother's Day.
+    - May I know what the offers are for Mother's Day.
+    - can I know what offers are available at for Mother's Day.
+    - Offers offered on Mother's Day.
+    - Offers available on Mother's Day.
+    - what Mother's Day offers are available.
+
+- intent: jeux_tt_en
+  examples: |
+    - what games do you offer
+    - Which games do you provide ?
+    - What games are on offer ?
+    - What games do you have to offer?
+    - Which games are available ?
+    - What games do you offer?
+    - I want to know more about the games available from you
+    - i want to find out more about what games we can play 
+    - what games can you provide ?
+
+- intent: question_jeu_tt_en
+  examples: |
+    - what games will you offer
+    - what games do you suggest ? 
+    - What kind of games do you offer?
+    - what type of games do you provide ? 
+    - What are your games?
+    - games available 
+    - games on offer 
+
+- intent: question_jeu_1_tt_en
+  examples: |
+    - I want to know details about the first offer
+    - i'm interested in the details of the first offer.
+    - I would like to know the details of the initial offer.
+    - Give me the details of the first offer.
+    - tell me about the first offer.
+    - I want the details of the 1st offer.
+    - yes, details on the 1st offer.
+    - what about your 1st deal .
+    - what about your first offer 
+
+- intent: detail_question_jeu_1_tt
+  examples: |
+    - How can we play edenya fan game
+    - how to play edenya's fan game ? 
+    - how to play the edenya fan game ? 
+    - for the edenya fan game, how to proceed to enjoy it?
+    - for the edenya fan game, what to do to take advantage of it ?
+    - for the edenya fan game, how to proceed to benefit from it.
+    - How do I play the edenya fan game ?
+    - How am I supposed to play the edenya fan game?
+    - How to play this game ?
+    - How are we supposed to play this game?
+    - is there a guidelines or a link for the game ?
+    - Do you have a link or instructions to follow for the game?
+    - are there any links or instructions for this game ? 
+
+- intent: question_jeu_2_tt_en
+  examples: |
+    - I want to know details about the Second Offer
+    - I want to know about the second offer.
+    - Give me the details of the second offer.
+    - what about the second offer.
+    - i am interested in the details of the second offer.
+    - I want the details of the 1st offer.
+    - yes, details on the 2nd offer.
+
+- intent: detail_question_jeu_2_tt_en
+  examples: |
+    - how to enjoy the play yalla game?
+    - How do i play the yalla game ? 
+    - How can we play play yalla game
+    - how am i meant to play the yalla game ? 
+    - for the game play yalla, how to proceed to take advantage of it.
+    - How do I play the play yalla game?
+    - How am I supposed to play this ?
+    - How to play this game ?
+    - How are we supposed to play this game?
+    - Do you have a link or instructions to follow for the game?
+    - are they any links or instructions for the game ? 
+    - do you have any link or guidance for the game ? 
+
+- intent: question_jeu_3_tt_en
+  examples: |
+    - I want to know details about the Third Offer
+    - I want to know about the Third Offer
+    - Give me the details of the Third Offer
+    - what about the Third Offer.
+    - i am interested in the details of the Third Offer.
+    - I want the details of the 3rd offer.
+    - yes, details on the 3rd offer.
+
+- intent: detail_question_jeu_3_tt_en
+  examples: |
+    - How you play Hal Ta3lem's game ? 
+    - how do we get into hal ta3lem game ? 
+    - How can we play Hal Ta3lem game
+    - how to play with hal ta3lem ?
+    - for Hal Ta3lem game, what to do to take advantage ? ?
+    - for the game Hal Ta3lem, how to proceed to take advantage of it.
+    - How am I supposed to play the Hal Ta3lem game?
+    - How to play this game ?
+    - How am I supposed to play ?
+    - How are we supposed to play this game ?
+    - what should we do to play this game ?
+    - Do you have a link or instructions to follow for the game?
+
+- intent: question_jeu_4_tt_en
+  examples: |
+    - I want to know details about the Fourth Offer
+    - I want to know about the Fourth Offer
+    - Give me the details of the Fourth Offer
+    - what about the Fourth Offer.
+    - i am interested in the details of the Fourth Offer.
+    - I want the details of 4th Offer.
+    - yes, details on the 4th offer.
+
+- intent: detail_question_jeu_4_tt_en
+  examples: |
+    - How you play the gameloft ? 
+    - how do we get into gameloft  ? 
+    - how to play with gameloft ?
+    - for gameloft, what to do to take advantage ? ?
+    - for the gameloft, how to proceed to take advantage of it.
+    - How am I supposed to play this game ?
+    - How to play this game ?
+    - How am I supposed to play ?
+    - How are we supposed to play this game ?
+    - what should we do to play this game ?
+    - Do you have a link or instructions to follow for the game?
+
+- intent: autres_informations_tt_en
+  examples: |
+    - Are there any other details ? 
+    - is there more information ?
+    - do you have any other information?
+    - do you have anything further ? 
+    - what else do you have ?
+
+- intent: remerciment_info_en
+  examples: |
+    - Thank you for this very useful information.
+    - Thank's for all the helpful information
+    - Thanks for this valuable information.
+    - i appreciate the information 
+    - Thank you for giving me the info
+    - Thanks for giving me the info.
+
+- intent: devinette_tt_en
+  examples: |
+    - Do you have guessing games ? 
+    -  DO You have riddles ? 
+    - I'm asking for riddles 
+    - i am asking for guessing games 
+    - are there any riddles ? 
+    - do you have guessing games ? 
+    
+    
+    
+
+  
+
+- intent: goodbye
+  examples: |
+    - au revoir
+    - à plus tard
+    - Bonsoir
+    - au revoir
+    - au revoir
+    - Bonne journée
+    - À un de ces quatre
+    - Bye Bye
+    - à plus tard
+
+- intent: affirm
+  examples: |
+    - oui
+    - y
+    - En effet
+    - bien sûr
+    - Ça a l'air bien
+
+- intent: deny
+  examples: |
+    - non
+    - n
+    - jamais
+    - Je ne pense pas
+    - n'aime pas ça
+    - certainement pas
+    - pas vraiment
+
+- intent: mood_great
+  examples: |
+    - parfait
+    - génial
+    - étonnante
+    - se sentir comme un roi
+    - magnifique
+    - je me sens très bien
+    - Je suis génial
+    - Je suis génial
+    - Je vais sauver le monde
+    - super content
+    - extrêmement bon
+    - tellement parfait
+    - si bon
+    - tellement parfait
+
+- intent: mood_unhappy
+  examples: |
+    - ma journée a été horrible
+    - Je suis triste
+    - je ne me sens pas très bien
+    - je suis déçu
+    - hyper triste
+    - Je suis tellement triste
+    - triste
+    - très triste
+    - malheureux
+    - pas bon
+    - pas très bien
+    - extrêmement triste
+    - si triste
+    - si triste
+
+- intent: bot_challenge
+  examples: |
+    - Etes-vous un robot?
+    - Êtes-vous un être humain?
+    - est-ce que je parle à un bot ?
+    - Est-ce que je parle à un humain ?

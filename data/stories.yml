@@ -1,0 +1,2089 @@
+version: "3.1"
+
+stories:
+####################### Opérateur Orange ################################
+
+####################### intent Offre : Story 1 pour le cas ou le user veut plus d'offre #########################
+
+#- story: test pour la langue path
+#  steps:
+#   - intent: greet
+#    - action: action_choix_de_langue
+
+##########################################################################################
+
+- story: orange plus offre sport avec menu principal fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: orange
+    - action: utter_orange
+    - intent: offres_org
+    - action: utter_offres_org
+    - intent: oui_plus_offres_org
+    - action: utter_oui_plus_offres_org
+    - intent: offre_sport_org
+    - action: utter_offre_sport_org
+    - intent: oui_menu_principal
+    - action: utter_orange
+
+- story: orange plus offre sport avec menu principal en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: orange
+    - action: utter_orange_en
+    - intent: offres_org_en
+    - action: utter_offres_org_en
+    - intent: oui_plus_offres_org_en
+    - action: utter_oui_plus_offres_org_en
+    - intent: offre_sport_org_en
+    - action: utter_offre_sport_org_en
+    - intent: oui_menu_principal_en
+    - action: utter_orange_en
+
+##########################################################################################
+
+- story: orange apres offre sport il choisit promotions offre fr path
+  steps:
+    - intent: offre_sport_org
+    - action: utter_offre_sport_org
+    - intent: oui_menu_principal
+    - action: utter_orange
+    - intent: promotions_org
+    - action: utter_promotions_org
+    - intent: non_pas_autre_chose
+    - action: utter_non_pas_autre_chose
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: orange apres offre sport il choisit promotions offre en path
+  steps:
+    - intent: offre_sport_org_en
+    - action: utter_offre_sport_org_en
+    - intent: oui_menu_principal_en
+    - action: utter_orange_en
+    - intent: promotions_org_en
+    - action: utter_promotions_org_en
+    - intent: non_pas_autre_chose_en
+    - action: utter_non_pas_autre_chose_en
+    - intent: goodbye
+    - action: utter_goodbye
+
+##########################################################################################
+
+- story: orange apres offre sport il choisit les offres fr path
+  steps:
+    - intent: offre_sport_org
+    - action: utter_offre_sport_org
+    - intent: oui_menu_principal
+    - action: utter_orange
+    - intent: offres_org
+    - action: utter_offres_org
+    - intent: non_plus_offres_org
+    - action: utter_orange
+
+- story: orange apres offre sport il choisit les offres en path
+  steps:
+    - intent: offre_sport_org_en
+    - action: utter_offre_sport_org_en
+    - intent: oui_menu_principal_en
+    - action: utter_orange_en
+    - intent: offres_org_en
+    - action: utter_offres_org_en
+    - intent: non_plus_offres_org_en
+    - action: utter_orange_en
+
+##########################################################################################
+
+- story: orange apres offre sport il choisit les jeux avec des quest fr path
+  steps:
+    - intent: offre_sport_org
+    - action: utter_offre_sport_org
+    - intent: oui_menu_principal
+    - action: utter_orange
+    - intent: jeux_org
+    - action: utter_jeux_org
+    - intent: oui_question_jeu
+    - action: utter_oui_question_jeu_org
+    - intent: question_jeu_org
+    - action: utter_question_jeu_org
+    - intent: non_pas_autre_chose
+    - action: utter_non_pas_autre_chose
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: orange apres offre sport il choisit les jeux avec des quest en path
+  steps:
+    - intent: offre_sport_org_en
+    - action: utter_offre_sport_org_en
+    - intent: oui_menu_principal_en
+    - action: utter_orange_en
+    - intent: jeux_org_en
+    - action: utter_jeux_org_en
+    - intent: oui_question_jeu_en
+    - action: utter_oui_question_jeu_org_en
+    - intent: question_jeu_org_en
+    - action: utter_question_jeu_org_en
+    - intent: non_pas_autre_chose_en
+    - action: utter_non_pas_autre_chose_en
+    - intent: goodbye
+    - action: utter_goodbye
+
+##########################################################################################
+
+- story: orange apres offre sport il choisit les jeux sans des quest fr path
+  steps:
+    - intent: offre_sport_org
+    - action: utter_offre_sport_org
+    - intent: oui_menu_principal
+    - action: utter_orange
+    - intent: jeux_org
+    - action: utter_jeux_org
+    - intent: non_autre_question
+    - action: utter_orange
+
+- story: orange apres offre sport il choisit les jeux sans des quest en path
+  steps:
+    - intent: offre_sport_org_en
+    - action: utter_offre_sport_org_en
+    - intent: oui_menu_principal_en
+    - action: utter_orange_en
+    - intent: jeux_org_en
+    - action: utter_jeux_org_en
+    - intent: non_autre_question_en
+    - action: utter_orange_en
+
+##########################################################################################
+
+- story: orange plus offre sport sans menu principal fr path
+  steps:
+    - intent: greet
+    - action: utter_greet_bot
+    - intent: orange
+    - action: utter_orange
+    - intent: offres_org
+    - action: utter_offres_org
+    - intent: oui_plus_offres_org
+    - action: utter_oui_plus_offres_org
+    - intent: offre_sport_org
+    - action: utter_offre_sport_org
+    - intent: non_pas_autre_chose
+    - action: utter_non_pas_autre_chose
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: orange plus offre sport sans menu principal en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: orange
+    - action: utter_orange_en
+    - intent: offres_org_en
+    - action: utter_offres_org_en
+    - intent: oui_plus_offres_org_en
+    - action: utter_oui_plus_offres_org_en
+    - intent: offre_sport_org_en
+    - action: utter_offre_sport_org_en
+    - intent: non_pas_autre_chose_en
+    - action: utter_non_pas_autre_chose_en
+    - intent: goodbye
+    - action: utter_goodbye
+
+##########################################################################################
+
+- story: orange plus offre music avec menu principal fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: orange
+    - action: utter_orange
+    - intent: offres_org
+    - action: utter_offres_org
+    - intent: oui_plus_offres_org
+    - action: utter_oui_plus_offres_org
+    - intent: offre_music_org
+    - action: utter_offre_music_org
+    - intent: oui_menu_principal
+    - action: utter_orange
+
+- story: orange plus offre music avec menu principal en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: orange
+    - action: utter_orange_en
+    - intent: offres_org_en
+    - action: utter_offres_org_en
+    - intent: oui_plus_offres_org_en
+    - action: utter_oui_plus_offres_org_en
+    - intent: offre_music_org_en
+    - action: utter_offre_music_org_en
+    - intent: oui_menu_principal_en
+    - action: utter_orange_en
+
+##########################################################################################
+
+- story: orange apres offre music il choisit gaming sans des quest fr path
+  steps:
+    - intent: offre_music_org
+    - action: utter_offre_music_org
+    - intent: oui_menu_principal
+    - action: utter_orange
+    - intent: gaming_org
+    - action: utter_gaming_org
+    - intent: non_pas_autre_chose
+    - action: utter_non_pas_autre_chose
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: orange apres offre music il choisit gaming sans des quest en path
+  steps:
+    - intent: offre_music_org_en
+    - action: utter_offre_music_org_en
+    - intent: oui_menu_principal_en
+    - action: utter_orange_en
+    - intent: gaming_org_en
+    - action: utter_gaming_org_en
+    - intent: non_pas_autre_chose_en
+    - action: utter_non_pas_autre_chose_en
+    - intent: goodbye
+    - action: utter_goodbye
+
+##########################################################################################
+
+- story: orange apres offre music il choisit autre info sans des quest fr path
+  steps:
+    - intent: offre_music_org
+    - action: utter_offre_music_org
+    - intent: oui_menu_principal
+    - action: utter_orange
+    - intent: autres_informations_org
+    - action: utter_autres_informations_org
+    - intent: non_pas_autre_chose
+    - action: utter_non_pas_autre_chose
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: orange apres offre music il choisit autre info sans des quest en path
+  steps:
+    - intent: offre_music_org_en
+    - action: utter_offre_music_org_en
+    - intent: oui_menu_principal_en
+    - action: utter_orange_en
+    - intent: autres_informations_org_en
+    - action: utter_autres_informations_org_en
+    - intent: non_pas_autre_chose_en
+    - action: utter_non_pas_autre_chose_en
+    - intent: goodbye
+    - action: utter_goodbye
+
+##########################################################################################
+
+- story: orange plus offre music sans menu principal fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: orange
+    - action: utter_orange
+    - intent: offres_org
+    - action: utter_offres_org
+    - intent: oui_plus_offres_org
+    - action: utter_oui_plus_offres_org
+    - intent: offre_music_org
+    - action: utter_offre_music_org
+    - intent: non_pas_autre_chose
+    - action: utter_non_pas_autre_chose
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: orange plus offre music sans menu principal en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: orange
+    - action: utter_orange_en
+    - intent: offres_org_en
+    - action: utter_offres_org_en
+    - intent: oui_plus_offres_org_en
+    - action: utter_oui_plus_offres_org_en
+    - intent: offre_music_org_en
+    - action: utter_offre_music_org_en
+    - intent: non_pas_autre_chose_en
+    - action: utter_non_pas_autre_chose_en
+    - intent: goodbye
+    - action: utter_goodbye
+##########################################################################################
+
+- story: orange plus offre food avec menu principal fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: orange
+    - action: utter_orange
+    - intent: offres_org
+    - action: utter_offres_org
+    - intent: oui_plus_offres_org
+    - action: utter_oui_plus_offres_org
+    - intent: offre_food_org
+    - action: utter_offre_food_org
+    - intent: oui_menu_principal
+    - action: utter_orange
+
+- story: orange plus offre food avec menu principal en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: orange
+    - action: utter_orange_en
+    - intent: offres_org_en
+    - action: utter_offres_org_en
+    - intent: oui_plus_offres_org_en
+    - action: utter_oui_plus_offres_org_en
+    - intent: offre_food_org_en
+    - action: utter_offre_food_org_en
+    - intent: oui_menu_principal_en
+    - action: utter_orange_en
+
+##########################################################################################
+
+- story: orange plus offre food apres il choisit offre + offre sport fr path
+  steps:
+    - intent: offre_food_org
+    - action: utter_offre_food_org
+    - intent: oui_menu_principal
+    - action: utter_orange
+    - intent: offres_org
+    - action: utter_offres_org
+    - intent: oui_plus_offres_org
+    - action: utter_oui_plus_offres_org
+    - intent: offre_sport_org
+    - action: utter_offre_sport_org
+    - intent: non_pas_autre_chose
+    - action: utter_non_pas_autre_chose
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: orange plus offre food apres il choisit offre + offre sport en path
+  steps:
+    - intent: offre_food_org_en
+    - action: utter_offre_food_org_en
+    - intent: oui_menu_principal_en
+    - action: utter_orange_en
+    - intent: offres_org_en
+    - action: utter_offres_org_en
+    - intent: oui_plus_offres_org_en
+    - action: utter_oui_plus_offres_org_en
+    - intent: offre_sport_org_en
+    - action: utter_offre_sport_org_en
+    - intent: non_pas_autre_chose_en
+    - action: utter_non_pas_autre_chose_en
+    - intent: goodbye
+    - action: utter_goodbye
+
+##########################################################################################
+
+- story: orange plus offre food sans menu principal fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: orange
+    - action: utter_orange
+    - intent: offres_org
+    - action: utter_offres_org
+    - intent: oui_plus_offres_org
+    - action: utter_oui_plus_offres_org
+    - intent: offre_food_org
+    - action: utter_offre_food_org
+    - intent: non_pas_autre_chose
+    - action: utter_non_pas_autre_chose
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: orange plus offre food sans menu principal en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: orange
+    - action: utter_orange_en
+    - intent: offres_org_en
+    - action: utter_offres_org_en
+    - intent: oui_plus_offres_org_en
+    - action: utter_oui_plus_offres_org_en
+    - intent: offre_food_org_en
+    - action: utter_offre_food_org_en
+    - intent: non_pas_autre_chose_en
+    - action: utter_non_pas_autre_chose_en
+    - intent: goodbye
+    - action: utter_goodbye
+
+##########################################################################################
+
+####################### intent Offre : Story 2 pour le cas ou le user ne veut plus d'offre #########################
+
+- story: orange pas plus offres fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: orange
+    - action: utter_orange
+    - intent: offres_org
+    - action: utter_offres_org
+    - intent: non_plus_offres_org
+    - action: utter_orange
+
+- story: orange pas plus offres en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: orange
+    - action: utter_orange_en
+    - intent: offres_org_en
+    - action: utter_offres_org_en
+    - intent: non_plus_offres_org_en
+    - action: utter_orange_en
+
+##########################################################################################
+
+- story: orange pas plus offres mais apres menu il choisit les promotions avec quest fr path
+  steps:
+    - intent: offres_org
+    - action: utter_offres_org
+    - intent: non_plus_offres_org
+    - action: utter_orange
+    - intent: promotions_org
+    - action: utter_promotions_org
+    - intent: question_promotions_org
+    - action: utter_question_promotion_org
+    - intent: oui_menu_principal
+    - action: utter_orange
+
+- story: orange pas plus offres mais apres menu il choisit les promotions avec quest en path
+  steps:
+    - intent: offres_org_en
+    - action: utter_offres_org_en
+    - intent: non_plus_offres_org_en
+    - action: utter_orange_en
+    - intent: promotions_org_en
+    - action: utter_promotions_org_en
+    - intent: question_promotions_org_en
+    - action: utter_question_promotion_org_en
+    - intent: oui_menu_principal_en
+    - action: utter_orange_en
+
+##########################################################################################
+
+- story: orange pas plus offres mais apres menu il choisit les promotions sans quest fr path
+  steps:
+    - intent: offres_org
+    - action: utter_offres_org
+    - intent: non_plus_offres_org
+    - action: utter_orange
+    - intent: promotions_org
+    - action: utter_promotions_org
+    - intent: non_pas_autre_chose
+    - action: utter_non_pas_autre_chose
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: orange pas plus offres mais apres menu il choisit les promotions sans quest en path
+  steps:
+    - intent: offres_org_en
+    - action: utter_offres_org_en
+    - intent: non_plus_offres_org_en
+    - action: utter_orange_en
+    - intent: promotions_org_en
+    - action: utter_promotions_org_en
+    - intent: non_pas_autre_chose_en
+    - action: utter_non_pas_autre_chose_en
+    - intent: goodbye
+    - action: utter_goodbye
+
+##########################################################################################
+
+####################### intent Offre : Story 3 pour le cas ou le user pose des questions sur les offres #########################
+
+- story: orange question offre Flybox Postpaye avec autre question sur les autres offres fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: orange
+    - action: utter_orange
+    - intent: offres_org
+    - action: utter_offres_org
+    - intent: oui_question_offres_org
+    - action: utter_oui_question_offres_org
+    - intent: plus_info_offre_flyboxPostpaye_org
+    - action: utter_Bot_question_offre
+    - intent: question_offre_flyboxPostpaye_org
+    - action: utter_question_offre_flyboxPostpaye_org
+    - intent: oui_autre_question_org
+    - action: utter_oui_question_offres_org
+
+- story: orange question offre Flybox Postpaye avec autre question sur les autres offres en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: orange
+    - action: utter_orange_en
+    - intent: offres_org_en
+    - action: utter_offres_org_en
+    - intent: oui_question_offres_org_en
+    - action: utter_oui_question_offres_org_en
+    - intent: plus_info_offre_flyboxPostpaye_org_en
+    - action: utter_Bot_question_offre_en
+    - intent: question_offre_flyboxPostpaye_org_en
+    - action: utter_question_offre_flyboxPostpaye_org_en
+    - intent: oui_autre_question_org_en
+    - action: utter_oui_question_offres_org_en
+
+##########################################################################################
+
+- story: orange question offre Flybox Postpaye avec autre question sur offre giga+ fr path
+  steps:
+    - intent: question_offre_flyboxPostpaye_org
+    - action: utter_question_offre_flyboxPostpaye_org
+    - intent: oui_autre_question_org
+    - action: utter_oui_question_offres_org
+    - intent: plus_info_offre_GigaPlus_org
+    - action: utter_Bot_question_offre
+    - intent: question_offre_GigaPlus_org
+    - action: utter_question_offre_GigaPlus_org
+    - intent: non_autre_question
+    - action: utter_orange
+
+- story: orange question offre Flybox Postpaye avec autre question sur offre giga+ en path
+  steps:
+    - intent: question_offre_flyboxPostpaye_org_en
+    - action: utter_question_offre_flyboxPostpaye_org_en
+    - intent: oui_autre_question_org_en
+    - action: utter_oui_question_offres_org_en
+    - intent: plus_info_offre_GigaPlus_org_en
+    - action: utter_Bot_question_offre_en
+    - intent: question_offre_GigaPlus_org_en
+    - action: utter_question_offre_GigaPlus_org_en
+    - intent: non_autre_question_en
+    - action: utter_orange_en
+
+##########################################################################################
+
+- story: orange question offre Flybox Postpaye sans autre question fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: orange
+    - action: utter_orange
+    - intent: offres_org
+    - action: utter_offres_org
+    - intent: oui_question_offres_org
+    - action: utter_oui_question_offres_org
+    - intent: plus_info_offre_flyboxPostpaye_org
+    - action: utter_Bot_question_offre
+    - intent: question_offre_flyboxPostpaye_org
+    - action: utter_question_offre_flyboxPostpaye_org
+    - intent: non_autre_question
+    - action: utter_orange
+
+- story: orange question offre Flybox Postpaye sans autre question en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: orange
+    - action: utter_orange_en
+    - intent: offres_org_en
+    - action: utter_offres_org_en
+    - intent: oui_question_offres_org_en
+    - action: utter_oui_question_offres_org_en
+    - intent: plus_info_offre_flyboxPostpaye_org_en
+    - action: utter_Bot_question_offre_en
+    - intent: question_offre_flyboxPostpaye_org_en
+    - action: utter_question_offre_flyboxPostpaye_org_en
+    - intent: non_autre_question_en
+    - action: utter_orange
+#########################################################################################
+
+- story: orange question offre Flybox Postpaye sans autre question apres menu il choisit les jeux fr path
+  steps:
+    - intent: question_offre_flyboxPostpaye_org
+    - action: utter_question_offre_flyboxPostpaye_org
+    - intent: non_autre_question
+    - action: utter_orange
+    - intent: jeux_org
+    - action: utter_jeux_org
+    - intent: oui_question_jeu
+    - action: utter_oui_question_jeu_org
+    - intent: question_jeu_org
+    - action: utter_question_jeu_org
+    - intent: non_pas_autre_chose
+    - action: utter_non_pas_autre_chose
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: orange question offre Flybox Postpaye sans autre question apres menu il choisit les jeux en path
+  steps:
+    - intent: question_offre_flyboxPostpaye_org_en
+    - action: utter_question_offre_flyboxPostpaye_org_en
+    - intent: non_autre_question_en
+    - action: utter_orange_en
+    - intent: jeux_org_en
+    - action: utter_jeux_org_en
+    - intent: oui_question_jeu_en
+    - action: utter_oui_question_jeu_org_en
+    - intent: question_jeu_org_en
+    - action: utter_question_jeu_org_en
+    - intent: non_pas_autre_chose_en
+    - action: utter_non_pas_autre_chose_en
+    - intent: goodbye
+    - action: utter_goodbye
+
+#########################################################################################
+
+- story: orange question offre Giga plus avec autre question fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: orange
+    - action: utter_orange
+    - intent: offres_org
+    - action: utter_offres_org
+    - intent: oui_question_offres_org
+    - action: utter_oui_question_offres_org
+    - intent: plus_info_offre_GigaPlus_org
+    - action: utter_Bot_question_offre
+    - intent: question_offre_GigaPlus_org
+    - action: utter_question_offre_GigaPlus_org
+    - intent: oui_autre_question_org
+    - action: utter_oui_question_offres_org
+
+- story: orange question offre Giga plus avec autre question en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: orange
+    - action: utter_orange_en
+    - intent: offres_org_en
+    - action: utter_offres_org_en
+    - intent: oui_question_offres_org_en
+    - action: utter_oui_question_offres_org_en
+    - intent: plus_info_offre_GigaPlus_org_en
+    - action: utter_Bot_question_offre_en
+    - intent: question_offre_GigaPlus_org_en
+    - action: utter_question_offre_GigaPlus_org_en
+    - intent: oui_autre_question_org_en
+    - action: utter_oui_question_offres_org_en
+
+#########################################################################################
+
+- story: orange question offre Darbox sans autre question fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: orange
+    - action: utter_orange
+    - intent: offres_org
+    - action: utter_offres_org
+    - intent: oui_question_offres_org
+    - action: utter_oui_question_offres_org
+    - intent: plus_info_offre_darbox_org
+    - action: utter_Bot_question_offre
+    - intent: question_offre_darbox_org
+    - action: utter_question_offre_darbox_org
+    - intent: non_autre_question
+    - action: utter_orange
+
+- story: orange question offre Darbox sans autre question en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: orange
+    - action: utter_orange_en
+    - intent: offres_org_en
+    - action: utter_offres_org_en
+    - intent: oui_question_offres_org_en
+    - action: utter_oui_question_offres_org_en
+    - intent: plus_info_offre_darbox_org_en
+    - action: utter_Bot_question_offre_en
+    - intent: question_offre_darbox_org_en
+    - action: utter_question_offre_darbox_org_en
+    - intent: non_autre_question_en
+    - action: utter_orange_en
+
+#########################################################################################
+
+- story: orange question offre Giga plus avec autre question sur l'offre darbox fr path
+  steps:
+    - intent: question_offre_GigaPlus_org
+    - action: utter_question_offre_GigaPlus_org
+    - intent: oui_autre_question_org
+    - action: utter_oui_question_offres_org
+    - intent: plus_info_offre_darbox_org
+    - action: utter_Bot_question_offre
+    - intent: question_offre_darbox_org
+    - action: utter_question_offre_darbox_org
+    - intent: non_autre_question
+    - action: utter_orange
+
+- story: orange question offre Giga plus avec autre question sur l'offre darbox en path
+  steps:
+    - intent: question_offre_GigaPlus_org_en
+    - action: utter_question_offre_GigaPlus_org_en
+    - intent: oui_autre_question_org_en
+    - action: utter_oui_question_offres_org_en
+    - intent: plus_info_offre_darbox_org_en
+    - action: utter_Bot_question_offre_en
+    - intent: question_offre_darbox_org_en
+    - action: utter_question_offre_darbox_org_en
+    - intent: non_autre_question_en
+    - action: utter_orange_en
+
+#########################################################################################
+
+- story: orange question offre Giga plus sans autre question fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: orange
+    - action: utter_orange
+    - intent: offres_org
+    - action: utter_offres_org
+    - intent: oui_question_offres_org
+    - action: utter_oui_question_offres_org
+    - intent: plus_info_offre_GigaPlus_org
+    - action: utter_Bot_question_offre
+    - intent: question_offre_GigaPlus_org
+    - action: utter_question_offre_GigaPlus_org
+    - intent: non_autre_question
+    - action: utter_orange
+
+- story: orange question offre Giga plus sans autre question en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: orange
+    - action: utter_orange_en
+    - intent: offres_org_en
+    - action: utter_offres_org_en
+    - intent: oui_question_offres_org_en
+    - action: utter_oui_question_offres_org_en
+    - intent: plus_info_offre_GigaPlus_org_en
+    - action: utter_Bot_question_offre_en
+    - intent: question_offre_GigaPlus_org_en
+    - action: utter_question_offre_GigaPlus_org_en
+    - intent: non_autre_question_en
+    - action: utter_orange_en
+
+#########################################################################################
+
+- story: orange question offre Giga plus sans autre question apres menu il choisit promotions fr path
+  steps:
+    - intent: plus_info_offre_GigaPlus_org
+    - action: utter_Bot_question_offre
+    - intent: question_offre_GigaPlus_org
+    - action: utter_question_offre_GigaPlus_org
+    - intent: non_autre_question
+    - action: utter_orange
+    - intent: promotions_org
+    - action: utter_promotions_org
+    - intent: non_pas_autre_chose
+    - action: utter_non_pas_autre_chose
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: orange question offre Giga plus sans autre question apres menu il choisit promotions en path
+  steps:
+    - intent: plus_info_offre_GigaPlus_org_en
+    - action: utter_Bot_question_offre_en
+    - intent: question_offre_GigaPlus_org_en
+    - action: utter_question_offre_GigaPlus_org_en
+    - intent: non_autre_question_en
+    - action: utter_orange_en
+    - intent: promotions_org_en
+    - action: utter_promotions_org_en
+    - intent: non_pas_autre_chose_en
+    - action: utter_non_pas_autre_chose_en
+    - intent: goodbye
+    - action: utter_goodbye
+
+#########################################################################################
+
+- story: orange question offre Hajj avec autre question fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: orange
+    - action: utter_orange
+    - intent: offres_org
+    - action: utter_offres_org
+    - intent: oui_question_offres_org
+    - action: utter_oui_question_offres_org
+    - intent: plus_info_offre_Hajj_org
+    - action: utter_Bot_question_offre
+    - intent: question_offre_Hajj_org
+    - action: utter_question_offre_Hajj_org
+    - intent: oui_autre_question_org
+    - action: utter_oui_question_offres_org
+
+- story: orange question offre Hajj avec autre question en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: orange
+    - action: utter_orange_en
+    - intent: offres_org_en
+    - action: utter_offres_org_en
+    - intent: oui_question_offres_org_en
+    - action: utter_oui_question_offres_org_en
+    - intent: plus_info_offre_Hajj_org_en
+    - action: utter_Bot_question_offre_en
+    - intent: question_offre_Hajj_org_en
+    - action: utter_question_offre_Hajj_org_en
+    - intent: oui_autre_question_org_en
+    - action: utter_oui_question_offres_org_en
+
+#########################################################################################
+
+- story: orange question offre Hajj sans autre question fr path
+  steps:
+    - intent: greet
+    - action: utter_greet_bot
+    - intent: orange
+    - action: utter_orange
+    - intent: offres_org
+    - action: utter_offres_org
+    - intent: oui_question_offres_org
+    - action: utter_oui_question_offres_org
+    - intent: plus_info_offre_Hajj_org
+    - action: utter_Bot_question_offre
+    - intent: question_offre_Hajj_org
+    - action: utter_question_offre_Hajj_org
+    - intent: non_autre_question
+    - action: utter_orange
+
+- story: orange question offre Hajj sans autre question en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: orange
+    - action: utter_orange_en
+    - intent: offres_org_en
+    - action: utter_offres_org_en
+    - intent: oui_question_offres_org_en
+    - action: utter_oui_question_offres_org_en
+    - intent: plus_info_offre_Hajj_org_en
+    - action: utter_Bot_question_offre_en
+    - intent: question_offre_Hajj_org_en
+    - action: utter_question_offre_Hajj_org_en
+    - intent: non_autre_question_en
+    - action: utter_orange_en
+
+#########################################################################################
+
+####################### intent Promotion  #########################
+
+- story: orange offre promotion avec question et menu fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: orange
+    - action: utter_orange
+    - intent: promotions_org
+    - action: utter_promotions_org
+    - intent: question_promotions_org
+    - action: utter_question_promotion_org
+    - intent: oui_menu_principal
+    - action: utter_orange
+
+- story: orange offre promotion avec question et menu en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: orange
+    - action: utter_orange_en
+    - intent: promotions_org_en
+    - action: utter_promotions_org_en
+    - intent: question_promotions_org_en
+    - action: utter_question_promotion_org_en
+    - intent: oui_menu_principal_en
+    - action: utter_orange_en
+
+#########################################################################################
+
+- story: orange offre promotion avec question et dans menu il choisit autre info fr path
+  steps:
+    - intent: promotions_org
+    - action: utter_promotions_org
+    - intent: question_promotions_org
+    - action: utter_question_promotion_org
+    - intent: oui_menu_principal
+    - action: utter_orange
+    - intent: autres_informations_org
+    - action: utter_autres_informations_org
+    - intent: non_pas_autre_chose
+    - action: utter_non_pas_autre_chose
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: orange offre promotion avec question et dans menu il choisit autre info en path
+  steps:
+    - intent: promotions_org_en
+    - action: utter_promotions_org_en
+    - intent: question_promotions_org_en
+    - action: utter_question_promotion_org_en
+    - intent: oui_menu_principal_en
+    - action: utter_orange_en
+    - intent: autres_informations_org_en
+    - action: utter_autres_informations_org_en
+    - intent: non_pas_autre_chose_en
+    - action: utter_non_pas_autre_chose_en
+    - intent: goodbye
+    - action: utter_goodbye
+
+#########################################################################################
+
+- story: orange offre promotion sans question fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: orange
+    - action: utter_orange
+    - intent: promotions_org
+    - action: utter_promotions_org
+    - intent: non_pas_autre_chose
+    - action: utter_non_pas_autre_chose
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: orange offre promotion sans question en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: orange
+    - action: utter_orange_en
+    - intent: promotions_org_en
+    - action: utter_promotions_org_en
+    - intent: non_pas_autre_chose_en
+    - action: utter_non_pas_autre_chose_en
+    - intent: goodbye
+    - action: utter_goodbye
+
+#########################################################################################
+
+####################### intent Jeux  #########################
+
+- story: orange offre jeux avec question jeu et menu principal fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: orange
+    - action: utter_orange
+    - intent: jeux_org
+    - action: utter_jeux_org
+    - intent: oui_question_jeu
+    - action: utter_oui_question_jeu_org
+    - intent: question_jeu_org
+    - action: utter_question_jeu_org
+    - intent: oui_menu_principal
+    - action: utter_orange
+
+- story: orange offre jeux avec question jeu et menu principal en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: orange
+    - action: utter_orange_en
+    - intent: jeux_org_en
+    - action: utter_jeux_org_en
+    - intent: oui_question_jeu_en
+    - action: utter_oui_question_jeu_org_en
+    - intent: question_jeu_org_en
+    - action: utter_question_jeu_org_en
+    - intent: oui_menu_principal_en
+    - action: utter_orange_en
+
+########################################################################################
+
+- story: orange offre jeux avec question jeu et apres menu principal il choisit les offres+offres sport fr path
+  steps:
+    - intent: question_jeu_org
+    - action: utter_question_jeu_org
+    - intent: oui_menu_principal
+    - action: utter_orange
+    - intent: offres_org
+    - action: utter_offres_org
+    - intent: oui_plus_offres_org
+    - action: utter_oui_plus_offres_org
+    - intent: offre_sport_org
+    - action: utter_offre_sport_org
+    - intent: oui_menu_principal
+    - action: utter_orange
+
+- story: orange offre jeux avec question jeu et apres menu principal il choisit les offres+offres sport en path
+  steps:
+    - intent: question_jeu_org_en
+    - action: utter_question_jeu_org_en
+    - intent: oui_menu_principal_en
+    - action: utter_orange_en
+    - intent: offres_org_en
+    - action: utter_offres_org_en
+    - intent: oui_plus_offres_org_en
+    - action: utter_oui_plus_offres_org_en
+    - intent: offre_sport_org_en
+    - action: utter_offre_sport_org_en
+    - intent: oui_menu_principal_en
+    - action: utter_orange_en
+
+########################################################################################
+
+- story: orange offre jeux avec question jeu et sans menu principal fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: orange
+    - action: utter_orange
+    - intent: jeux_org
+    - action: utter_jeux_org
+    - intent: oui_question_jeu
+    - action: utter_oui_question_jeu_org
+    - intent: question_jeu_org
+    - action: utter_question_jeu_org
+    - intent: non_pas_autre_chose
+    - action: utter_non_pas_autre_chose
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: orange offre jeux avec question jeu et sans menu principal en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: orange
+    - action: utter_orange_en
+    - intent: jeux_org_en
+    - action: utter_jeux_org_en
+    - intent: oui_question_jeu_en
+    - action: utter_oui_question_jeu_org_en
+    - intent: question_jeu_org_en
+    - action: utter_question_jeu_org_en
+    - intent: non_pas_autre_chose_en
+    - action: utter_non_pas_autre_chose_en
+    - intent: goodbye
+    - action: utter_goodbye
+
+########################################################################################
+
+- story: orange offre jeux sans question jeu apres menu il choisit gaming fr path
+  steps:
+    - intent: jeux_org
+    - action: utter_jeux_org
+    - intent: non_autre_question
+    - action: utter_orange
+    - intent: gaming_org
+    - action: utter_gaming_org
+    - intent: non_pas_autre_chose
+    - action: utter_non_pas_autre_chose
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: orange offre jeux sans question jeu apres menu il choisit gaming en path
+  steps:
+    - intent: jeux_org_en
+    - action: utter_jeux_org_en
+    - intent: non_autre_question_en
+    - action: utter_orange_en
+    - intent: gaming_org
+    - action: utter_gaming_org
+    - intent: non_pas_autre_chose
+    - action: utter_non_pas_autre_chose
+    - intent: goodbye
+    - action: utter_goodbye
+
+########################################################################################
+
+- story: orange offre jeux sans question jeu fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: orange
+    - action: utter_orange
+    - intent: jeux_org
+    - action: utter_jeux_org
+    - intent: non_autre_question
+    - action: utter_orange
+
+- story: orange offre jeux sans question jeu en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: orange
+    - action: utter_orange_en
+    - intent: jeux_org_en
+    - action: utter_jeux_org_en
+    - intent: non_autre_question_en
+    - action: utter_orange_en
+
+########################################################################################
+
+- story: orange offre jeux sans question jeu apres le menu il choisit les promotionss fr path
+  steps:
+    - intent: jeux_org
+    - action: utter_jeux_org
+    - intent: non_autre_question
+    - action: utter_orange
+    - intent: promotions_org
+    - action: utter_promotions_org
+    - intent: non_pas_autre_chose
+    - action: utter_non_pas_autre_chose
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: orange offre jeux sans question jeu apres le menu il choisit les promotionss en path
+  steps:
+    - intent: jeux_org_en
+    - action: utter_jeux_org_en
+    - intent: non_autre_question_en
+    - action: utter_orange_en
+    - intent: promotions_org
+    - action: utter_promotions_org
+    - intent: non_pas_autre_chose
+    - action: utter_non_pas_autre_chose
+    - intent: goodbye
+    - action: utter_goodbye
+
+########################################################################################
+
+####################### intent Gaming   #########################
+
+- story: orange offre gaming avec menu fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: orange
+    - action: utter_orange
+    - intent: gaming_org
+    - action: utter_gaming_org
+    - intent: oui_menu_principal
+    - action: utter_orange
+
+- story: orange offre gaming avec menu en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot
+    - intent: orange
+    - action: utter_orange
+    - intent: gaming_org
+    - action: utter_gaming_org
+    - intent: oui_menu_principal
+    - action: utter_orange
+
+########################################################################################
+
+- story: orange offre gaming sans menu fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: orange
+    - action: utter_orange
+    - intent: gaming_org
+    - action: utter_gaming_org
+    - intent: non_pas_autre_chose
+    - action: utter_non_pas_autre_chose
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: orange offre gaming sans menu en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: orange
+    - action: utter_orange_en
+    - intent: gaming_org_en
+    - action: utter_gaming_org_en
+    - intent: non_pas_autre_chose_en
+    - action: utter_non_pas_autre_chose_en
+    - intent: goodbye
+    - action: utter_goodbye
+
+########################################################################################
+
+####################### intent Autre infos   #########################
+
+- story: orange offre autre infos avec menu fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: orange
+    - action: utter_orange
+    - intent: autres_informations_org
+    - action: utter_autres_informations_org
+    - intent: oui_menu_principal
+    - action: utter_orange
+
+- story: orange offre autre infos avec menu en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: orange
+    - action: utter_orange_en
+    - intent: autres_informations_org_en
+    - action: utter_autres_informations_org_en
+    - intent: oui_menu_principal_en
+    - action: utter_orange_en
+
+########################################################################################
+
+- story: orange offre autre infos avec menu puis il choisit les offres fr path
+  steps:
+    - intent: autres_informations_org
+    - action: utter_autres_informations_org
+    - intent: oui_menu_principal
+    - action: utter_orange
+    - intent: offres_org
+    - action: utter_offres_org
+    - intent: non_plus_offres_org
+    - action: utter_orange
+
+- story: orange offre autre infos avec menu puis il choisit les offres en path
+  steps:
+    - intent: autres_informations_org_en
+    - action: utter_autres_informations_org_en
+    - intent: oui_menu_principal_en
+    - action: utter_orange_en
+    - intent: offres_org_en
+    - action: utter_offres_org_en
+    - intent: non_plus_offres_org_en
+    - action: utter_orange_en
+
+########################################################################################
+
+- story: orange offre autre infos sans menu fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: orange
+    - action: utter_orange
+    - intent: autres_informations_org
+    - action: utter_autres_informations_org
+    - intent: non_pas_autre_chose
+    - action: utter_non_pas_autre_chose
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: orange offre autre infos sans menu en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: orange
+    - action: utter_orange_en
+    - intent: autres_informations_org_en
+    - action: utter_autres_informations_org_en
+    - intent: non_pas_autre_chose_en
+    - action: utter_non_pas_autre_chose_en
+    - intent: goodbye
+    - action: utter_goodbye
+
+########################################################################################
+
+####################### Opérateur oreedoo ################################
+
+- story: Offre dispo chez Ooredoo avec plus offre pack 4G et bonne réponse fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: oreedoo
+    - action: utter_oreedoo
+    - intent: offres_ored
+    - action: utter_offres_ored
+    - intent: oui_plus_offres
+    - action: utter_oui_plus_offres
+    - intent: offre_pack_4G_ored
+    - action: utter_offre_pack_4G_ored
+    - intent: oui_question_offre_pack4G_ored
+    - action: utter_oui_question_offre_pack4G_ored
+    - intent: oui_bien_repondu
+    - action: utter_oreedoo
+
+- story: Offre dispo chez Ooredoo avec plus offre pack 4G et bonne réponse en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: oreedoo
+    - action: utter_oreedoo_en
+    - intent: offres_ored_en
+    - action: utter_offres_ored_en
+    - intent: oui_plus_offres_en
+    - action: utter_oui_plus_offres_en
+    - intent: offre_pack_4G_ored_en
+    - action: utter_offre_pack_4G_ored_en
+    - intent: oui_question_offre_pack4G_ored_en
+    - action: utter_oui_question_offre_pack4G_ored_en
+    - intent: oui_bien_repondu_en
+    - action: utter_oreedoo_en
+
+########################################################################################
+
+- story: Offre dispo chez Ooredoo avec plus offre pack 4G et bonne réponse apres le menu il choisit offre fete des meres fr path
+  steps:
+    - intent: offre_pack_4G_ored
+    - action: utter_offre_pack_4G_ored
+    - intent: oui_question_offre_pack4G_ored
+    - action: utter_oui_question_offre_pack4G_ored
+    - intent: oui_bien_repondu
+    - action: utter_oreedoo
+    - intent: offre_fete_des_meres_ored
+    - action: utter_offre_fete_des_meres_ored
+    - intent: oui_question_offre_fete_mere
+    - action: utter_oui_question_fete_des_meres_ored
+    - intent: oui_question_offre_fete_mere
+    - action: utter_oui_question_fete_des_meres_ored
+    - intent: question_offre_1_ored
+    - action: utter_Bot_question_offre
+    - intent: detail_question_offre_1_ored
+    - action: utter_detail_question_offre_1_ored
+    - intent: oui_bien_repondu
+    - action: utter_oreedoo
+
+- story: Offre dispo chez Ooredoo avec plus offre pack 4G et bonne réponse apres le menu il choisit offre fete des meres en path
+  steps:
+    - intent: offre_pack_4G_ored_en
+    - action: utter_offre_pack_4G_ored_en
+    - intent: oui_question_offre_pack4G_ored_en
+    - action: utter_oui_question_offre_pack4G_ored_en
+    - intent: oui_bien_repondu_en
+    - action: utter_oreedoo_en
+    - intent: offre_fete_des_meres_ored_en
+    - action: utter_offre_fete_des_meres_ored_en
+    - intent: oui_question_offre_fete_mere_en
+    - action: utter_oui_question_fete_des_meres_ored_en
+    - intent: oui_question_offre_fete_mere_en
+    - action: utter_oui_question_fete_des_meres_ored_en
+    - intent: question_offre_1_ored_en
+    - action: utter_Bot_question_offre_en
+    - intent: detail_question_offre_1_ored_en
+    - action: utter_detail_question_offre_1_ored_en
+    - intent: oui_bien_repondu_en
+    - action: utter_oreedoo_en
+
+########################################################################################
+
+- story: Offre dispo chez Ooredoo avec plus offre pack 4G et pas de réponse fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: oreedoo
+    - action: utter_oreedoo
+    - intent: offres_ored
+    - action: utter_offres_ored
+    - intent: oui_plus_offres
+    - action: utter_oui_plus_offres
+    - intent: offre_pack_4G_ored
+    - action: utter_offre_pack_4G_ored
+    - intent: oui_question_offre_pack4G_ored
+    - action: utter_oui_question_offre_pack4G_ored
+    - intent: non_pas_repondu
+    - action: utter_non_pas_repondu
+
+- story: Offre dispo chez Ooredoo avec plus offre pack 4G et pas de réponse en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: oreedoo
+    - action: utter_oreedoo_en
+    - intent: offres_ored_en
+    - action: utter_offres_ored_en
+    - intent: oui_plus_offres_en
+    - action: utter_oui_plus_offres_en
+    - intent: offre_pack_4G_ored_en
+    - action: utter_offre_pack_4G_ored_en
+    - intent: oui_question_offre_pack4G_ored_en
+    - action: utter_oui_question_offre_pack4G_ored_en
+    - intent: non_pas_repondu_en
+    - action: utter_non_pas_repondu_en
+
+#######################################################################################
+
+- story: Offre dispo chez Ooredoo avec plus offre adsl et vdsl fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: oreedoo
+    - action: utter_oreedoo
+    - intent: offres_ored
+    - action: utter_offres_ored
+    - intent: oui_plus_offres
+    - action: utter_oui_plus_offres
+    - intent: offre_adsl_vdsl_ored
+    - action: utter_offre_adsl_vdsl_ored
+    - action: utter_oui_plus_offres
+
+- story: Offre dispo chez Ooredoo avec plus offre adsl et vdsl en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: oreedoo
+    - action: utter_oreedoo_en
+    - intent: offres_ored_en
+    - action: utter_offres_ored_en
+    - intent: oui_plus_offres_en
+    - action: utter_oui_plus_offres_en
+    - intent: offre_adsl_vdsl_ored_en
+    - action: utter_offre_adsl_vdsl_ored_en
+    - action: utter_oui_plus_offres_en
+
+#####################################################################################
+
+- story: Offre dispo chez Ooredoo avec plus offre adsl et vdsl et apres il choisit offre pack 4g fr path
+  steps:
+    - intent: oui_plus_offres
+    - action: utter_oui_plus_offres
+    - intent: offre_adsl_vdsl_ored
+    - action: utter_offre_adsl_vdsl_ored
+    - action: utter_oui_plus_offres
+    - intent: offre_pack_4G_ored
+    - action: utter_offre_pack_4G_ored
+    - intent: oui_question_offre_pack4G_ored
+    - action: utter_oui_question_offre_pack4G_ored
+    - intent: non_pas_repondu
+    - action: utter_non_pas_repondu
+
+- story: Offre dispo chez Ooredoo avec plus offre adsl et vdsl et apres il choisit offre pack 4g en path
+  steps:
+    - intent: oui_plus_offres_en
+    - action: utter_oui_plus_offres_en
+    - intent: offre_adsl_vdsl_ored_en
+    - action: utter_offre_adsl_vdsl_ored_en
+    - action: utter_oui_plus_offres_en
+    - intent: offre_pack_4G_ored_en
+    - action: utter_offre_pack_4G_ored_en
+    - intent: oui_question_offre_pack4G_ored_en
+    - action: utter_oui_question_offre_pack4G_ored_en
+    - intent: non_pas_repondu_en
+    - action: utter_non_pas_repondu_en
+
+#####################################################################################
+
+- story: Offre dispo chez Ooredoo avec plus offre DO fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: oreedoo
+    - action: utter_oreedoo
+    - intent: offres_ored
+    - action: utter_offres_ored
+    - intent: oui_plus_offres
+    - action: utter_oui_plus_offres
+    - intent: offre_do_ored
+    - action: utter_offre_do_ored
+    - action: utter_oui_plus_offres
+
+- story: Offre dispo chez Ooredoo avec plus offre DO en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: oreedoo
+    - action: utter_oreedoo_en
+    - intent: offres_ored_en
+    - action: utter_offres_ored_en
+    - intent: oui_plus_offres_en
+    - action: utter_oui_plus_offres_en
+    - intent: offre_do_ored_en
+    - action: utter_offre_do_ored_en
+    - action: utter_oui_plus_offres_en
+
+#####################################################################################
+
+- story: Offre dispo chez Ooredoo avec plus offre DO et apres il choisit offre adsl/vdsl fr path
+  steps:
+    - intent: offre_do_ored
+    - action: utter_offre_do_ored
+    - action: utter_oui_plus_offres
+    - intent: offre_adsl_vdsl_ored
+    - action: utter_offre_adsl_vdsl_ored
+    - action: utter_oui_plus_offres
+
+- story:  Offre dispo chez Ooredoo avec plus offre DO et apres il choisit offre adsl/vdsl en path
+  steps:
+    - intent: offre_do_ored_en
+    - action: utter_offre_do_ored_en
+    - action: utter_oui_plus_offres_en
+    - intent: offre_adsl_vdsl_ored_en
+    - action: utter_offre_adsl_vdsl_ored_en
+    - action: utter_oui_plus_offres_en
+
+#####################################################################################
+
+- story:  Ooredoo offre sans plus offres fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: oreedoo
+    - action: utter_oreedoo
+    - intent: offres_ored
+    - action: utter_offres_ored
+    - intent: non_plus_offres
+    - action: utter_oreedoo
+
+- story:  Ooredoo offre sans plus offres en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: oreedoo
+    - action: utter_oreedoo_en
+    - intent: offres_ored_en
+    - action: utter_offres_ored_en
+    - intent: non_plus_offres_en
+    - action: utter_oreedoo_en
+
+#####################################################################################
+
+- story: Ooredoo offre sans plus offres apres le menu il choisit les jeux fr path
+  steps:
+    - intent: offres_ored
+    - action: utter_offres_ored
+    - intent: non_plus_offres
+    - action: utter_oreedoo
+    - intent: jeux_ored
+    - action: utter_jeux_ored
+    - intent: oui_menu_principal
+    - action: utter_oreedoo
+
+- story: Ooredoo offre sans plus offres apres le menu il choisit les jeux en path
+  steps:
+    - intent: offres_ored_en
+    - action: utter_offres_ored_en
+    - intent: non_plus_offres_en
+    - action: utter_oreedoo_en
+    - intent: jeux_ored_en
+    - action: utter_jeux_ored_en
+    - intent: oui_menu_principal_en
+    - action: utter_oreedoo_en
+
+#####################################################################################
+
+- story:  Ooredoo offre fete des meres avec detail sur l'offre 1 et succes de reponse fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: oreedoo
+    - action: utter_oreedoo
+    - intent: offre_fete_des_meres_ored
+    - action: utter_offre_fete_des_meres_ored
+    - intent: oui_question_offre_fete_mere
+    - action: utter_oui_question_fete_des_meres_ored
+    - intent: oui_question_offre_fete_mere
+    - action: utter_oui_question_fete_des_meres_ored
+    - intent: question_offre_1_ored
+    - action: utter_Bot_question_offre
+    - intent: detail_question_offre_1_ored
+    - action: utter_detail_question_offre_1_ored
+    - intent: oui_bien_repondu
+    - action: utter_oreedoo
+
+- story:  Ooredoo offre fete des meres avec detail sur l'offre 1 et succes de reponse en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: oreedoo
+    - action: utter_oreedoo_en
+    - intent: offre_fete_des_meres_ored_en
+    - action: utter_offre_fete_des_meres_ored_en
+    - intent: oui_question_offre_fete_mere_en
+    - action: utter_oui_question_fete_des_meres_ored_en
+    - intent: oui_question_offre_fete_mere_en
+    - action: utter_oui_question_fete_des_meres_ored_en
+    - intent: question_offre_1_ored_en
+    - action: utter_Bot_question_offre_en
+    - intent: detail_question_offre_1_ored_en
+    - action: utter_detail_question_offre_1_ored_en
+    - intent: oui_bien_repondu_en
+    - action: utter_oreedoo_en
+
+#####################################################################################
+
+- story:  Ooredoo offre fete des meres avec detail sur l'offre 1 et sans succes de reponse fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: oreedoo
+    - action: utter_oreedoo
+    - intent: offre_fete_des_meres_ored
+    - action: utter_offre_fete_des_meres_ored
+    - intent: oui_question_offre_fete_mere
+    - action: utter_oui_question_fete_des_meres_ored
+    - intent: oui_question_offre_fete_mere
+    - action: utter_oui_question_fete_des_meres_ored
+    - intent: question_offre_1_ored
+    - action: utter_Bot_question_offre
+    - intent: detail_question_offre_1_ored
+    - action: utter_detail_question_offre_1_ored
+    - intent: non_pas_repondu
+    - action: utter_non_pas_repondu_ored
+
+- story:  Ooredoo offre fete des meres avec detail sur l'offre 1 et sans succes de reponse en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: oreedoo
+    - action: utter_oreedoo_en
+    - intent: offre_fete_des_meres_ored_en
+    - action: utter_offre_fete_des_meres_ored_en
+    - intent: oui_question_offre_fete_mere_en
+    - action: utter_oui_question_fete_des_meres_ored_en
+    - intent: oui_question_offre_fete_mere_en
+    - action: utter_oui_question_fete_des_meres_ored_en
+    - intent: question_offre_1_ored_en
+    - action: utter_Bot_question_offre_en
+    - intent: detail_question_offre_1_ored_en
+    - action: utter_detail_question_offre_1_ored_en
+    - intent: non_pas_repondu_en
+    - action: utter_non_pas_repondu_ored_en
+
+#####################################################################################
+
+- story:  Ooredoo offre fete des meres avec detail sur l'offre 2 et avec succes de reponse fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: oreedoo
+    - action: utter_oreedoo
+    - intent: offre_fete_des_meres_ored
+    - action: utter_offre_fete_des_meres_ored
+    - intent: oui_question_offre_fete_mere
+    - action: utter_oui_question_fete_des_meres_ored
+    - intent: oui_question_offre_fete_mere
+    - action: utter_oui_question_fete_des_meres_ored
+    - intent: question_offre_2_ored
+    - action: utter_Bot_question_offre
+    - intent: detail_question_offre_2_ored
+    - action: utter_detail_question_offre_2_ored
+    - intent: oui_bien_repondu
+    - action: utter_oreedoo
+
+- story:  Ooredoo offre fete des meres avec detail sur l'offre 2 et avec succes de reponse en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: oreedoo
+    - action: utter_oreedoo_en
+    - intent: offre_fete_des_meres_ored_en
+    - action: utter_offre_fete_des_meres_ored_en
+    - intent: oui_question_offre_fete_mere_en
+    - action: utter_oui_question_fete_des_meres_ored_en
+    - intent: oui_question_offre_fete_mere_en
+    - action: utter_oui_question_fete_des_meres_ored_en
+    - intent: question_offre_2_ored_en
+    - action: utter_Bot_question_offre_en
+    - intent: detail_question_offre_2_ored_en
+    - action: utter_detail_question_offre_2_ored_en
+    - intent: oui_bien_repondu_en
+    - action: utter_oreedoo_en
+
+#####################################################################################
+
+- story:  Ooredoo offre fete des meres avec detail sur l'offre 2 et sans succes de reponse fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: oreedoo
+    - action: utter_oreedoo
+    - intent: offre_fete_des_meres_ored
+    - action: utter_offre_fete_des_meres_ored
+    - intent: oui_question_offre_fete_mere
+    - action: utter_oui_question_fete_des_meres_ored
+    - intent: oui_question_offre_fete_mere
+    - action: utter_oui_question_fete_des_meres_ored
+    - intent: question_offre_2_ored
+    - action: utter_Bot_question_offre
+    - intent: detail_question_offre_2_ored
+    - action: utter_detail_question_offre_2_ored
+    - intent: non_pas_repondu
+    - action: utter_non_pas_repondu_ored
+
+- story:  Ooredoo offre fete des meres avec detail sur l'offre 2 et sans succes de reponse en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: oreedoo
+    - action: utter_oreedoo_en
+    - intent: offre_fete_des_meres_ored_en
+    - action: utter_offre_fete_des_meres_ored_en
+    - intent: oui_question_offre_fete_mere_en
+    - action: utter_oui_question_fete_des_meres_ored_en
+    - intent: oui_question_offre_fete_mere_en
+    - action: utter_oui_question_fete_des_meres_ored_en
+    - intent: question_offre_2_ored_en
+    - action: utter_Bot_question_offre_en
+    - intent: detail_question_offre_2_ored_en
+    - action: utter_detail_question_offre_2_ored_en
+    - intent: non_pas_repondu_en
+    - action: utter_non_pas_repondu_ored_en
+
+#####################################################################################
+
+- story:  Ooredoo jeux disponible fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: oreedoo
+    - action: utter_oreedoo
+    - intent: jeux_ored
+    - action: utter_jeux_ored
+    - intent: oui_menu_principal
+    - action: utter_oreedoo
+
+- story:  Ooredoo jeux disponible en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: oreedoo
+    - action: utter_oreedoo_en
+    - intent: jeux_ored_en
+    - action: utter_jeux_ored_en
+    - intent: oui_menu_principal_en
+    - action: utter_oreedoo_en
+
+#####################################################################################
+
+####################### Opérateur TT ################################
+
+- story: Offre tunisieTélécom pas de question fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: tunisie_télécom
+    - action: utter_tunisie_télécom
+    - intent: offres_tt
+    - action: utter_offres_tt
+    - intent: non_pas_questions
+    - action: utter_tunisie_télécom
+
+- story: Offre tunisieTélécom pas de question en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: tunisie_télécom
+    - action: utter_tunisie_télécom_en
+    - intent: offres_tt_en
+    - action: utter_offres_tt_en
+    - intent: non_pas_questions_en
+    - action: utter_tunisie_télécom_en
+
+#####################################################################################
+
+- story: Offre fete des meres tunisieTélécom fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: tunisie_télécom
+    - action: utter_tunisie_télécom
+    - intent: offre_fete_des_meres_tt
+    - action: utter_offre_fete_des_meres_tt
+    - intent: oui_menu_principal
+    - action: utter_tunisie_télécom
+
+- story: Offre fete des meres tunisieTélécom en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: tunisie_télécom
+    - action: utter_tunisie_télécom_en
+    - intent: offre_fete_des_meres_tt_en
+    - action: utter_offre_fete_des_meres_tt_en
+    - intent: oui_menu_principal_en
+    - action: utter_tunisie_télécom_en
+
+#####################################################################################
+
+- story: Jeux tunisieTélécom avec question sur le jeu 1 (pas bien repondu) fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: tunisie_télécom
+    - action: utter_tunisie_télécom
+    - intent: jeux_tt
+    - action: utter_jeux_tt
+    - intent: oui_question_jeu
+    - action: utter_oui_question_jeu_tt
+    - intent: question_jeu_1_tt
+    - action: utter_question_jeu_1_tt
+    - intent: detail_question_jeu_1_tt
+    - action: utter_detail_question_jeu_1_tt
+    - intent: non_pas_repondu
+    - action: utter_non_pas_repondu_jeu1_tt
+    - intent: oui_menu_principal
+    - action: utter_tunisie_télécom
+
+- story: Jeux tunisieTélécom avec question sur le jeu 1 (pas bien repondu) en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: tunisie_télécom
+    - action: utter_tunisie_télécom_en
+    - intent: jeux_tt_en
+    - action: utter_jeux_tt_en
+    - intent: oui_question_jeu_en
+    - action: utter_oui_question_jeu_tt_en
+    - intent: question_jeu_1_tt_en
+    - action: utter_question_jeu_1_tt_en
+    - intent: detail_question_jeu_1_tt_en
+    - action: utter_detail_question_jeu_1_tt_en
+    - intent: non_pas_repondu_en
+    - action: utter_non_pas_repondu_jeu1_tt_en
+    - intent: oui_menu_principal_en
+    - action: utter_tunisie_télécom_en
+
+#####################################################################################
+
+- story: Jeux tunisieTélécom avec question sur le jeu 1 (oui bien repondu) fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: tunisie_télécom
+    - action: utter_tunisie_télécom
+    - intent: jeux_tt
+    - action: utter_jeux_tt
+    - intent: oui_question_jeu
+    - action: utter_oui_question_jeu_tt
+    - intent: question_jeu_1_tt
+    - action: utter_question_jeu_1_tt
+    - intent: detail_question_jeu_1_tt
+    - action: utter_detail_question_jeu_1_tt
+    - intent: oui_bien_repondu
+    - action: utter_tunisie_télécom
+
+- story: Jeux tunisieTélécom avec question sur le jeu 1 (oui bien repondu) en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: tunisie_télécom
+    - action: utter_tunisie_télécom_en
+    - intent: jeux_tt_en
+    - action: utter_jeux_tt_en
+    - intent: oui_question_jeu_en
+    - action: utter_oui_question_jeu_tt_en
+    - intent: question_jeu_1_tt_en
+    - action: utter_question_jeu_1_tt_en
+    - intent: detail_question_jeu_1_tt_en
+    - action: utter_detail_question_jeu_1_tt_en
+    - intent: oui_bien_repondu_en
+    - action: utter_tunisie_télécom_en
+
+#####################################################################################
+
+- story: Jeux tunisieTélécom sans question sur les jeux fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: tunisie_télécom
+    - action: utter_tunisie_télécom
+    - intent: jeux_tt
+    - action: utter_jeux_tt
+    - intent: non_autre_question
+    - action: utter_tunisie_télécom
+
+- story: Jeux tunisieTélécom sans question sur les jeux en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: tunisie_télécom
+    - action: utter_tunisie_télécom_en
+    - intent: jeux_tt_en
+    - action: utter_jeux_tt_en
+    - intent: non_autre_question_en
+    - action: utter_tunisie_télécom_en
+
+#####################################################################################
+
+- story: Jeux tunisieTélécom avec question sur le jeu 2 (Menu principal) fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: tunisie_télécom
+    - action: utter_tunisie_télécom
+    - intent: jeux_tt
+    - action: utter_jeux_tt
+    - intent: oui_question_jeu
+    - action: utter_oui_question_jeu_tt
+    - intent: question_jeu_2_tt
+    - action: utter_question_jeu_2_tt
+    - intent: detail_question_jeu_2_tt
+    - action: utter_detail_question_jeu_1_tt
+    - intent: oui_menu_principal
+    - action: utter_tunisie_télécom
+
+- story: Jeux tunisieTélécom avec question sur le jeu 2 (Menu principal) en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: tunisie_télécom
+    - action: utter_tunisie_télécom_en
+    - intent: jeux_tt_en
+    - action: utter_jeux_tt_en
+    - intent: oui_question_jeu_en
+    - action: utter_oui_question_jeu_tt_en
+    - intent: question_jeu_2_tt_en
+    - action: utter_question_jeu_2_tt_en
+    - intent: detail_question_jeu_2_tt_en
+    - action: utter_detail_question_jeu_1_tt_en
+    - intent: oui_menu_principal_en
+    - action: utter_tunisie_télécom_en
+
+#####################################################################################
+
+- story: Jeux tunisieTélécom avec question sur le jeu 3 (oui bien repondu) fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: tunisie_télécom
+    - action: utter_tunisie_télécom
+    - intent: jeux_tt
+    - action: utter_jeux_tt
+    - intent: oui_question_jeu
+    - action: utter_oui_question_jeu_tt
+    - intent: question_jeu_3_tt
+    - action: utter_question_jeu_3_tt
+    - intent: detail_question_jeu_3_tt
+    - action: utter_detail_question_jeu_3_tt
+    - intent: oui_bien_repondu
+    - action: utter_tunisie_télécom
+
+- story: Jeux tunisieTélécom avec question sur le jeu 3 (oui bien repondu) en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: tunisie_télécom
+    - action: utter_tunisie_télécom_en
+    - intent: jeux_tt_en
+    - action: utter_jeux_tt_en
+    - intent: oui_question_jeu_en
+    - action: utter_oui_question_jeu_tt_en
+    - intent: question_jeu_3_tt_en
+    - action: utter_question_jeu_3_tt_en
+    - intent: detail_question_jeu_3_tt_en
+    - action: utter_detail_question_jeu_3_tt_en
+    - intent: oui_bien_repondu_en
+    - action: utter_tunisie_télécom_en
+
+#####################################################################################
+
+- story: Jeux tunisieTélécom avec question sur le jeu 3 (pas bien repondu) fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: tunisie_télécom
+    - action: utter_tunisie_télécom
+    - intent: jeux_tt
+    - action: utter_jeux_tt
+    - intent: oui_question_jeu
+    - action: utter_oui_question_jeu_tt
+    - intent: question_jeu_3_tt
+    - action: utter_question_jeu_3_tt
+    - intent: detail_question_jeu_3_tt
+    - action: utter_detail_question_jeu_3_tt
+    - intent: non_pas_repondu
+    - action: utter_non_pas_repondu_jeu3_tt
+    - intent: oui_menu_principal
+    - action: utter_tunisie_télécom
+
+- story: Jeux tunisieTélécom avec question sur le jeu 3 (pas bien repondu) en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: tunisie_télécom
+    - action: utter_tunisie_télécom_en
+    - intent: jeux_tt_en
+    - action: utter_jeux_tt_en
+    - intent: oui_question_jeu_en
+    - action: utter_oui_question_jeu_tt_en
+    - intent: question_jeu_3_tt_en
+    - action: utter_question_jeu_3_tt_en
+    - intent: detail_question_jeu_3_tt_en
+    - action: utter_detail_question_jeu_3_tt_en
+    - intent: non_pas_repondu_en
+    - action: utter_non_pas_repondu_jeu3_tt_en
+    - intent: oui_menu_principal_en
+    - action: utter_tunisie_télécom_en
+
+##################################################################################
+
+- story: Jeux tunisieTélécom avec question sur le jeu 4 (Menu principal) fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: tunisie_télécom
+    - action: utter_tunisie_télécom
+    - intent: jeux_tt
+    - action: utter_jeux_tt
+    - intent: oui_question_jeu
+    - action: utter_oui_question_jeu_tt
+    - intent: question_jeu_4_tt
+    - action: utter_question_jeu_4_tt
+    - intent: detail_question_jeu_4_tt
+    - action: utter_detail_question_jeu_4_tt
+    - intent: oui_menu_principal
+    - action: utter_tunisie_télécom
+
+- story: Jeux tunisieTélécom avec question sur le jeu 4 (Menu principal) en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: tunisie_télécom
+    - action: utter_tunisie_télécom_en
+    - intent: jeux_tt_en
+    - action: utter_jeux_tt_en
+    - intent: oui_question_jeu_en
+    - action: utter_oui_question_jeu_tt_en
+    - intent: question_jeu_4_tt_en
+    - action: utter_question_jeu_4_tt_en
+    - intent: detail_question_jeu_4_tt_en
+    - action: utter_detail_question_jeu_4_tt_en
+    - intent: oui_menu_principal_en
+    - action: utter_tunisie_télécom_en
+
+##################################################################################
+
+- story: autre info tunisieTélécom fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: tunisie_télécom
+    - action: utter_tunisie_télécom
+    - intent: autres_informations_tt
+    - action: utter_autres_informations_tt
+    - intent: remerciment_info
+    - action: utter_remerciment_info
+
+- story: autre info tunisieTélécom en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: tunisie_télécom
+    - action: utter_tunisie_télécom_en
+    - intent: autres_informations_tt_en
+    - action: utter_autres_informations_tt_en
+    - intent: remerciment_info_en
+    - action: utter_remerciment_info_en
+
+##################################################################################
+
+- story: devinette tunisieTélécom fr path
+  steps:
+    - intent: greet_fr
+    - action: utter_greet_bot
+    - intent: tunisie_télécom
+    - action: utter_tunisie_télécom
+    - intent: devinette_tt
+    - action: utter_devinette_tt
+    - intent: oui_menu_principal
+    - action: utter_tunisie_télécom
+
+- story: devinette tunisieTélécom en path
+  steps:
+    - intent: greet_en
+    - action: utter_greet_bot_en
+    - intent: tunisie_télécom
+    - action: utter_tunisie_télécom_en
+    - intent: devinette_tt_en
+    - action: utter_devinette_tt_en
+    - intent: oui_menu_principal_en
+    - action: utter_tunisie_télécom_en
+
+##################################################################################

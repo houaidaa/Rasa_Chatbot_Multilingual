@@ -1,0 +1,1216 @@
+version: "3.1"
+
+intents:
+  - greet_fr
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - orange
+  - tunisie_télécom
+  - oreedoo
+  - offres_org
+  - oui_plus_offres_org
+  - non_plus_offres_org
+  - oui_question_offres_org
+  - offre_sport_org
+  - offre_music_org
+  - offre_food_org
+  - promotions_org
+  - jeux_org
+  - gaming_org
+  - plus_info_offre_darbox_org
+  - plus_info_offre_GigaPlus_org
+  - plus_info_offre_flyboxPostpaye_org
+  - plus_info_offre_Hajj_org
+  - question_offre_darbox_org
+  - oui_autre_question_org
+  - non_autre_question
+  - question_offre_flyboxPostpaye_org
+  - question_offre_Hajj_org
+  - question_offre_GigaPlus_org
+  - oui_menu_principal
+  - non_pas_autre_chose
+  - question_promotions_org
+  - autres_informations_org
+  - question_jeu_org
+  - oui_question_jeu
+  - oui_plus_offres
+  - non_plus_offres
+  - oui_question_offres
+  - offres_ored
+  - offre_pack_4G_ored
+  - oui_question_offre_pack4G_ored
+  - oui_bien_repondu
+  - non_pas_repondu
+  - offre_adsl_vdsl_ored
+  - offre_do_ored
+  - offre_fete_des_meres_ored
+  - oui_question_offre_fete_mere
+  - question_offre_1_ored
+  - detail_question_offre_1_ored
+  - question_offre_2_ored
+  - detail_question_offre_2_ored
+  - jeux_ored
+  - offres_tt
+  - non_pas_questions
+  - offre_fete_des_meres_tt
+  - jeux_tt
+  - question_jeu_tt
+  - question_jeu_1_tt
+  - detail_question_jeu_1_tt
+  - question_jeu_2_tt
+  - detail_question_jeu_2_tt
+  - question_jeu_3_tt
+  - detail_question_jeu_3_tt
+  - question_jeu_4_tt
+  - detail_question_jeu_4_tt
+  - autres_informations_tt
+  - remerciment_info
+  - devinette_tt
+  - greet_en
+  - question_user_lang_en
+  - offres_org_en
+  - oui_plus_offres_org_en
+  - offre_sport_org_en
+  - offre_music_org_en
+  - offre_food_org_en
+  - oui_menu_principal_en
+  - non_pas_autre_chose_en
+  - non_plus_offres_org_en
+  - oui_question_offres_org_en
+  - plus_info_offre_darbox_org_en
+  - question_offre_darbox_org_en
+  - plus_info_offre_flyboxPostpaye_org_en
+  - question_offre_flyboxPostpaye_org_en
+  - plus_info_offre_GigaPlus_org_en
+  - question_offre_GigaPlus_org_en
+  - plus_info_offre_Hajj_org_en
+  - question_offre_Hajj_org_en
+  - oui_autre_question_org_en
+  - non_autre_question_en
+  - promotions_org_en
+  - question_promotions_org_en
+  - jeux_org_en
+  - oui_question_jeu_en
+  - question_jeu_org_en
+  - gaming_org_en
+  - autres_informations_org_en
+  - offres_ored_en
+  - oui_plus_offres_en
+  - offre_pack_4G_ored_en
+  - oui_question_offre_pack4G_ored_en
+  - oui_bien_repondu_en
+  - non_pas_repondu_en
+  - offre_adsl_vdsl_ored_en
+  - offre_do_ored_en
+  - non_plus_offres_en
+  - oui_question_offres_en
+  - offre_fete_des_meres_ored_en
+  - oui_question_offre_fete_mere_en
+  - question_offre_1_ored_en
+  - detail_question_offre_1_ored_en
+  - question_offre_2_ored_en
+  - detail_question_offre_2_ored_en
+  - jeux_ored_en
+  - offres_tt_en
+  - non_pas_questions_en
+  - offre_fete_des_meres_tt_en
+  - jeux_tt_en
+  - question_jeu_tt_en
+  - question_jeu_1_tt_en
+  - detail_question_jeu_1_tt_en
+  - question_jeu_2_tt_en
+  - detail_question_jeu_2_tt_en
+  - question_jeu_3_tt_en
+  - detail_question_jeu_3_tt_en
+  - question_jeu_4_tt_en
+  - detail_question_jeu_4_tt_en
+  - autres_informations_tt_en
+  - remerciment_info_en
+  - devinette_tt_en
+
+
+responses:
+  utter_greet:
+    - text: "Bonjour Mr"
+
+  utter_Bot_greet_en:
+    - text: "Hello, I am a robot."
+
+###########################################################################
+
+  utter_Fallback_intent:
+    - text: "je suis désolé, je n'ai pas bien compris. Pourriez-vous reformuler ?"
+
+  utter_Fallback_intent_en:
+    - text: "I’m sorry, I didn’t understand. Could you rephrase that please ?"
+
+###########################################################################
+
+  utter_infos:
+    - text: "bien sur je peux vous donnez des infos , juste à propos de quoi ? "
+
+  utter_question_offres_options:
+    - text: "test test"
+
+###########################################################################
+
+  utter_greet_bot:
+    - text: "Bonjour! Je suis votre assistant virtuel.Je suis là pour vous guider.
+             Veuillez me dire quel est votre opérateur téléphonique : "
+      buttons:
+        - title: "Orange"
+          payload: "/orange"
+        - title: "Tunisie Télécom"
+          payload: "/tunisie_télécom"
+        - title: "Oreedoo"
+          payload: "/oreedoo"
+
+  utter_greet_bot_en:
+    - text: "Hello ! I am your virtual assistant, I am here to guide you.
+             Please tell me who is your telephone company :"
+      buttons:
+        - title: "Orange"
+          payload: "/orange"
+        - title: "Tunisie Telecom"
+          payload: "/tunisie_télécom"
+        - title: "Oreedoo"
+          payload: "/oreedoo"
+
+########################################################################################
+
+################################## Orange ######################################
+
+  utter_orange:
+    - text: "Parfait! Sur quel sujet puis-je vous aider ?"
+      buttons:
+        - title: "Offres"
+          payload: "/offres_org"
+        - title: "Promotions"
+          payload: "/promotions_org"
+        - title: "Jeux"
+          payload: "/jeux_org"
+        - title: "Gaming"
+          payload: "/gaming_org"
+        - title: "d'autres informations"
+          payload: "/autres_informations_org"
+
+  utter_orange_en:
+    - text: "Perfect! How may I assist you ?"
+      buttons:
+        - title: "Offers"
+          payload: "/offres_org_en"
+        - title: "Promotions"
+          payload: "/promotions_org_en"
+        - title: "Games"
+          payload: "/jeux_org_enjeux_org_en"
+        - title: "Gaming"
+          payload: "/gaming_org_en"
+        - title: "Further information"
+          payload: "/autres_informations_org_en"
+
+###########################################################################################
+
+  utter_offres_org:
+    - text: "Nos offres proposées :\n 
+            - Avec Darbox, Profitez de la connexion avec la meilleure qualité de 12Mo à 50Mo à partir de 36dt400 par mois au lieu de 40dt400. Consultez notre [site](https://www.orange.tn/darbox) pour profiter de l'offre.\n
+            - Vous pouvez commander Flybox postpaye avec une livraison gratuite d'ici le 31 mai.\n
+            - Avec Flybox postpaye, profitez d'une magnifique diffusion sur le meilleur réseau Internet, pour 36 jours par mois.\n
+            
+            - Si vous aimez faire votre shopping en restant chez vous et avec le budget qui vous convient, activez le bon plan Dabchy et profitez d'une journée avec 10% de remise.\n 
+            
+            - Avec l'offre Giga plus, vous pouvez bénéficiez d'une réduction de 10% sur l'application My Orange.\n
+            
+            - Si vous n'avez plus de solde dans votre téléphone, Ne vous inquiétez pas avec orange vous pouvez charger sur Orange Money ou Mobi Money, et si vous  n'avais pas d'internet entrez sur My Orange et chargé votre ligne en un clic. Vous pouvez profiter de 10% de remise via le [site](https://bit.ly/352nXfJ).\n
+            
+            - Si vous etes au Hajj ou vous avez quelqu'un qui part au Hajj, Orange vous offre la possibilité pouvez activer d'activer le pass Hajj et vous pouvez profitez de 250Mo pour 10 jours ou 125Mo pour 5 jours.\n 
+            
+            Souhaitez-vous avoir plus d'offres ? "
+      buttons:
+        - title: "Oui, si vous avez"
+          payload: "/oui_plus_offres_org"
+        - title: "Non, Merci "
+          payload: "/non_plus_offres_org"
+        - title: "Questions sur les offres précedentes"
+          payload: "/oui_question_offres_org"
+
+  utter_offres_org_en:
+    - text: "Our suggested offers :\n 
+            - With Darbox, take advantage of the connection with the highest quality from 12MB to 50MB of 36dt400 per month instead of 40dt400. Visit our [site](https://www.orange.tn/darbox) to get the deal.\n
+            - You can order Flybox postpaid with free delivery by May 31.\n 
+            - With Flybox postpaid, get a great broadcast on the best Internet network, for 36 days a month.\n
+            - If you like to do your shopping while staying at home and with the budget that suits you, activate the Dabchy good plan and enjoy a day with a 10% discount.
+            - With the Giga plus offer, you get a 10% discount on the My Orange application.
+            - If you don't have money on your phone, don't worry with orange you can charge with Orange Money or Mobi Money, and if you did not have internet enter My Orange and charge your line in one click. You can get a 10% discount on the [website](https://bit.ly/352nXfJ).
+            - If you are in the Hajj or have someone going to the Hajj, Orange gives you the ability to activate the Hajj pass and you can enjoy 250MB for 10 days or 125MB for 5 days.
+            Do you need any other offers ?"
+      buttons:
+        - title: "Yes, if you have"
+          payload: "/oui_plus_offres_org_en"
+        - title: "No, Thank you"
+          payload: "/non_plus_offres_org_en"
+        - title: "Questions about previous offers"
+          payload: "/oui_question_offres_org_en"
+
+###############################################################################################
+
+  utter_oui_plus_offres_org:
+    - text: "Parfait! Veuillez choisir parmi ceux-ci : \n"
+      buttons:
+        - title: "Offre Sport"
+          payload: "/offre_sport_org"
+        - title: "Offre Musique"
+          payload: "/offre_music_org"
+        - title: "Offre Food"
+          payload: "/offre_food_org"
+
+  utter_oui_plus_offres_org_en:
+    - text: "Great ! Please choose from the following: \n"
+      buttons:
+        - title: "Sport Offer"
+          payload: "/offre_sport_org_en"
+        - title: "Music Offer"
+          payload: "/offre_music_org_en"
+        - title: "Food Offer"
+          payload: "/offre_food_org_en"
+
+###############################################################################################
+
+  utter_offre_sport_org:
+    - text: "Avec l'option Flex Fitness de California Gym, vous pouvez  vous entraîner n'importe où, n'importe quand, avec juste Orange. Rechargez le coaching à 500 ms par jour à partir de crédits téléphoniques et profitez de 3 jours offerts dès votre premier abonnement. \n
+             Souhaitez-vous autre chose, madame/monsieur ?  \n "
+      buttons:
+        - title: "Oui"
+          payload: "/oui_menu_principal"
+        - title: "Non"
+          payload: "/non_pas_autre_chose"
+
+  utter_offre_sport_org_en:
+    - text: "With the California Gym Flex Fitness option, you can work out everywhere, at any time.  just with Orange, you can charge coaching for 500 ms a day from phone credits and take advantage of 3 free days from your first subscription.\n
+             Do you want something else, Ms/Mr ? \n "
+      buttons:
+        - title: "Yes"
+          payload: "/oui_menu_principal_en"
+        - title: "No"
+          payload: "/non_pas_autre_chose_en"
+
+###########################################################################
+
+  utter_offre_music_org:
+    - text: "Si vous aimez la musique, activez simplement le forfait GegaMusic sur My Orange et soyez le premier à écouter les nouvelles chansons de JenJoun sur Anghami Plus. \n Pour plus d'informations, veuillez visiter [site Web] : (https://bit.ly/352nXfJ).
+             Souhaitez-vous autre chose, madame/monsieur ? : "
+      buttons:
+        - title: "Oui"
+          payload: "/oui_menu_principal"
+        - title: "Non"
+          payload: "/non_pas_autre_chose"
+
+  utter_offre_music_org_en:
+    - text: "If you love music, just turn on the GegaMusic option on My Orange and be the first to listen to JenJoun's new songs on Anghami Plus.\n For more information, please visit [website]:(https://bit.ly/352nXfJ). \n
+             Do you want something else, Ms/Mr ?"
+      buttons:
+        - title: "Yes"
+          payload: "/oui_menu_principal_en"
+        - title: "No"
+          payload: "/non_pas_autre_chose_en"
+
+###########################################################################
+
+  utter_offre_food_org:
+    - text: "- Économisez 50 % sur les livraisons quotidiennes lorsque vous activez l'offre exclusive My Orange Yassir Transport. Rendez-vous dans la rubrique Bons Plans de l'application My Orange. \n
+             - Profitez de la livraison gratuite le week-end avec le bon plan Yassir Express dans l'application My Orange. Pour plus d'information consultez le [site](https://bit.ly/352nXfJ).\n
+             Souhaitez-vous autre chose, madame/monsieur ? :"
+      buttons:
+        - title: "Oui"
+          payload: "/oui_menu_principal"
+        - title: "Non"
+          payload: "/non_pas_autre_chose"
+
+  utter_offre_food_org_en:
+    - text: "- Save 50% on daily deliveries by activating the exclusive My Orange Yassir Transport offer. Visit the Good Deals section of My Orange app. \n
+             - Enjoy free weekend shipping with the Yassir Express deal in the My Orange app. For more details, go to [site](https://bit.ly/352nXfJ).\n
+             Do you want something else, Ms/Mr ?"
+      buttons:
+        - title: "Yes"
+          payload: "/oui_menu_principal_en"
+        - title: "No"
+          payload: "/non_pas_autre_chose_en"
+
+###########################################################################
+
+  utter_non_pas_autre_chose:
+    - text: "D'accord.\n 
+             Si jamais vous avez d'autres questions, n'hésitez pas à nous contacter. À bientôt !"
+
+  utter_non_pas_autre_chose_en:
+    - text: "OKay.\n 
+             Please feel free to contact us with any questions. Talk to you soon !"
+
+###########################################################################
+
+  utter_non_plus_offres_org:
+    - text: "Très bien! Sur quel sujet puis-je vous aider ?"
+
+  utter_non_plus_offres_org_en:
+    - text: "Very well ! What can I do for you ?"
+
+###########################################################################
+
+  utter_oui_question_offres_org:
+    - text: "Allez-y Madame/Monsieur Je suis à votre disposition. \n
+             Veuillez sélectionner ci-dessous l'offre sur laquelle vous souhaitez vous renseigner."
+      buttons:
+        - title: "Offre du Darbox"
+          payload: "/plus_info_offre_darbox_org"
+        - title: "Offre du flybox postpaye"
+          payload: "/plus_info_offre_flyboxPostpaye_org"
+        - title: "Offre Giga plus"
+          payload: "/plus_info_offre_GigaPlus_org"
+        - title: "Offre du Hajj"
+          payload: "/plus_info_offre_Hajj_org"
+
+  utter_oui_question_offres_org_en:
+    - text: "Go ahead Mrs/Mr I am at your disposal.\n
+             Please select below the offer for which you are interested in asking questions."
+      buttons:
+        - title: "Darbox offer"
+          payload: "/plus_info_offre_darbox_org_en"
+        - title: "Post-Paid Flybox Offer"
+          payload: "/plus_info_offre_flyboxPostpaye_org_en"
+        - title: "Giga plus offer"
+          payload: "/plus_info_offre_GigaPlus_org_en"
+        - title: "Hajj offer"
+          payload: "/plus_info_offre_Hajj_org_en"
+
+###########################################################################
+
+  utter_Bot_question_offre:
+    - text: "Quels renseignements souhaitez-vous connaître sur l'offre désigné ?"
+
+  utter_Bot_question_offre_en:
+    - text: "What information would you like to receive regarding the designated offer ?"
+
+###########################################################################
+
+  utter_question_offre_darbox_org:
+    - text: "En ce qui concerne l'offre Darbox, les prix dépendent du forfait que vous choisissez. \n For more information on how to take advantage of the offer, please see the instructions and more details on the [site](https://www.orange.tn/darbox).\n
+             Avez-vous d'autres questions monsieur/madame :  \n "
+      buttons:
+        - title: "Oui"
+          payload: "/oui_autre_question_org"
+        - title: "Non"
+          payload: "/non_autre_question"
+
+  utter_question_offre_darbox_org_en:
+    - text: "As for the Darbox offer, the prices are dependent on the package you choose. \n Pour découvrir comment profiter de l'offre, je vous invite à voir les instructions et plus de détails sur le [site](https://www.orange.tn/darbox). \n
+             Are there any other questions, Mr/Ms ?\n "
+      buttons:
+        - title: "Yes"
+          payload: "/oui_autre_question_org_en"
+        - title: "No"
+          payload: "/non_autre_question_en"
+
+###########################################################################
+
+  utter_question_offre_flyboxPostpaye_org:
+    - text: "Veuillez vous référer à ce [site] (https://oran.ge/3FASAg0) il contient toutes les informations nécessaires."
+      buttons:
+        - title: "Oui"
+          payload: "/oui_autre_question_org"
+        - title: "Non"
+          payload: "/non_autre_question"
+
+  utter_question_offre_flyboxPostpaye_org_en:
+    - text: "Please refer to this [site] (https://oran.ge/3FASAg0) which contains all the required information."
+      buttons:
+        - title: "Yes"
+          payload: "/oui_autre_question_org_en"
+        - title: "No"
+          payload: "/non_autre_question_en"
+
+###########################################################################
+
+  utter_question_offre_GigaPlus_org:
+    - text: "Pour profiter de l'offre Giga plus, Composez #124* et activez la premiere option \n
+             125Go pour 4500Dt seulement et vous pouvez bénéficiez d'une réduction de 10% sur [l'application](https://www.orange.tn/les-options-prepayees). "
+      buttons:
+        - title: "Oui"
+          payload: "/oui_autre_question_org"
+        - title: "Non"
+          payload: "/non_autre_question"
+
+  utter_question_offre_GigaPlus_org_en:
+    - text: "To benefit from the Giga plus offer, type #124* and activate the first 125GB option for 4500Dt only, and you can receive a 10% discount on [the application](https://www.orange.tn/les-options-prepayees). "
+      buttons:
+        - title: "Yes"
+          payload: "/oui_autre_question_org_en"
+        - title: "No"
+          payload: "/non_autre_question_en"
+
+###########################################################################
+
+  utter_question_offre_Hajj_org:
+    - text: "Composez * 109 # et suivez les instructions ou visitez [site Web] (https://oran.ge/3aTFQ8S)"
+      buttons:
+        - title: "Oui"
+          payload: "/oui_autre_question_org"
+        - title: "Non"
+          payload: "/non_autre_question"
+
+  utter_question_offre_Hajj_org_en:
+    - text: "Press *109# and follow the instructions or visit [website](http://oran.ge/3aTFQ8S)"
+      buttons:
+        - title: "Yes"
+          payload: "/oui_autre_question_org_en"
+        - title: "No"
+          payload: "/non_autre_question_en"
+
+###########################################################################
+
+  utter_question_offres:
+    - text: "Pour l'offre Darbox, les prix dépendent par le forfait que vous choisissez Pour plus de details consulter ce [lien]( https://www.orange.tn/darbox) "
+
+  utter_question_offres_en:
+    - text: "For the Darbox offer, prices are based on the package you choose, refer to this [link](https://www.orange.tn/darbox) for more information. "
+
+###########################################################################
+
+  utter_promotions_org:
+    - text: "Profitez des remises exclusives jusqu'à 1200dt pour la série de iPhone 13 dans la limite du stock.\n 
+             Visitez les boutiques orange pour voir toute la collection.\n
+             Avez-vous des questions monsieur/madame ? \n"
+      buttons:
+        - title: "Oui"
+          payload: "/question_promotions_org"
+        - title: "Non"
+          payload: "/non_pas_autre_chose"
+
+  utter_promotions_org_en:
+    - text: "Enjoy exclusive reductions of up to 1200dt for the iPhone 13 series within stock limits.\n 
+             Go to the orange shops to see all the collection.\n
+             Are there any questions, Mr/Mrs ? \n"
+      buttons:
+        - title: "Yes"
+          payload: "/question_promotions_org_en"
+        - title: "No"
+          payload: "/non_pas_autre_chose_en"
+
+###########################################################################
+
+  utter_question_promotion_org:
+    - text: "Vous pouvez consulter ce [lien]( https://www.orange.tn/nos-boutiques) pour une liste d'articles disponibles, ou bien visitez les boutiques Orange
+             Si j'ai répondu à votre question, cliquez ci-dessous afin de retourner au menu principal. \n"
+      buttons:
+        - title: "D'accord"
+          payload: "/oui_menu_principal"
+
+  utter_question_promotion_org_en:
+    - text: "You can check out this [link] (https://www.orange.tn/nos-boutiques) for a list of available items or visit the Orange shops. \n
+             If I have answered your question, click here to go back to the main menu. \n"
+      buttons:
+        - title: "Main menu"
+          payload: "/oui_menu_principal_en"
+
+###########################################################################
+
+  utter_jeux_org:
+    - text: "- Vous aimez les mangas et souhaitez apprendre le japonais ? Inscrivez-vous au service Busuu d'Orange et apprenez en jouant. \n
+             - Êtes-vous  fan de Jurassic World ? Aujourd'hui, vous et vos amis pouvez gagner un Forja privé et un smartphone en entrant dans My Orange et en répondant au quiz spécial Jurassic World de Private Forja. \n
+             - Faites tourner la roue dans l'application My Orange pour gagner un smartphone et d'autres cadeaux. \n
+             Vous avez des questions sur les jeux proposés ?"
+      buttons:
+        - title: "Oui"
+          payload: "/oui_question_jeu"
+        - title: "Non"
+          payload: "/non_autre_question"
+
+  utter_jeux_org_en:
+    - text: "- Do you enjoy playing manga and are you interested in learning Japanese? Enroll in the Orange Busuu service and learn while playing. \n
+             - Are you an Jurassic World fan? Now you and your friends can win a private Forja and a smartphone by entering My Orange and answering the special Jurassic World quiz from Private Forja. \n
+             - Spin the wheel in My Orange app to win a smartphone and other gifts. \n
+             Do you have any questions related to the proposed games ?"
+      buttons:
+        - title: "Yes"
+          payload: "/oui_question_jeu_en"
+        - title: "No"
+          payload: "/non_autre_question_en"
+
+###########################################################################
+
+  utter_oui_question_jeu_org:
+    - text: "Laquelle des offres que souhaitez vous renseigner ?"
+
+  utter_oui_question_jeu_org_en:
+    - text: "Which of the following are you interested in ?"
+
+###########################################################################
+
+  utter_question_jeu_org:
+    - text: "- Voici le [lien](https://bit.ly/352nXfJ) direct pour jouer à Jurassic World Special Forja Private Quiz. \n
+             - Si vous voulez accéder aux services de Busuu pour apprendre le japonais, veuillez visiter ce [lien](https://oran.ge/33REpo8). \n 
+             Dans le cas où vous avez d'autres questions ou si vous ne trouvez pas votre réponse, veuillez visiter le site Web d'orange directement. \n
+             Avez-vous besoin de savoir autre chose, monsieur ou madame?"
+      buttons:
+        - title: "Oui"
+          payload: "/oui_menu_principal"
+        - title: "Non"
+          payload: "/non_pas_autre_chose"
+
+  utter_question_jeu_org_en:
+    - text: "- Here you can play the Jurassic World Special Forja Private Quiz [link](https://bit.ly/352nXfJ). \n
+             - Si vous voulez accéder aux services de Busuu pour apprendre le japonais, veuillez visiter ce [lien](https://oran.ge/33REpo8).If you are interested in accessing Busuu services to learn Japanese, please refer to this [link] (https://oran.ge/33REpo8). \n 
+             If you have other questions or do not find an answer, go directly to the orange site. \n
+             Is there something else you need to know, Mrs/Mr ?"
+      buttons:
+        - title: "Yes"
+          payload: "/oui_menu_principal_en"
+        - title: "No"
+          payload: "/non_pas_autre_chose_en"
+
+###########################################################################
+
+  utter_gaming_org:
+    - text: "Vous aimez les jeux et souhaitez devenir un pro ? Inscrivez-vous au club geek et participez au e-tournoi pour gagner 2000 dt cash. \n Consultez ce [lien](https://geekclub.tn/) pour plus d'informations. \n
+             Avez-vous besoin de savoir autre chose, monsieur/madame? "
+      buttons:
+        - title: "Oui"
+          payload: "/oui_menu_principal"
+        - title: "Non"
+          payload: "/non_pas_autre_chose"
+
+  utter_gaming_org_en:
+    - text: "Do you like games and are interested in becoming a professional ? Join the geek club and enter the e-tournament to win 2000 dt cash. \n Refer to the [link](https://geekclub.tn/) for more information.\n
+             Is there something else you need to know, Mrs/Mr ? "
+      buttons:
+        - title: "Yes"
+          payload: "/oui_menu_principal_en"
+        - title: "No"
+          payload: "/non_pas_autre_chose_en"
+
+###########################################################################
+
+  utter_autres_informations_org:
+    - text: "- Grâce à My pins, vous pouvez faire vos achats sur founa.com. Rendez-vous sur l'application My Orange, activez le Bon Plan Founa et bénéficiez de 20 dt sur 80 pins. \n
+             - Avec Orange, vous pouvez charger votre ligne directement sur site internet d'Orange sans vous déplacer. \n
+             - Nous disposons de plusieurs accessoires en ligne consulter le [site](https://www.orange.tn/smartphones-et-accessoires/accessoires) pour en tirer parti. \n
+             Avez-vous besoin de savoir autre chose, monsieur/madame?"
+      buttons:
+        - title: "Oui"
+          payload: "/oui_menu_principal"
+        - title: "Non"
+          payload: "/non_pas_autre_chose"
+
+  utter_autres_informations_org_en:
+    - text: "- With My pins, you can buy from founa.com. Access the My Orange app, activate the Founa Voucher and receive 20 dt out of 80 pins. \n
+             - With Orange, you can charge your line right on the Orange site without having to move. \n
+             - We have many accessories online, check out the [site](https://www.orange.tn/smartphones-et-accessories/accessories) to take advantage of this. \n
+             Is there something else you need to know, Mrs/Mr ?"
+      buttons:
+        - title: "Yes"
+          payload: "/oui_menu_principal_en"
+        - title: "No"
+          payload: "/non_pas_autre_chose_en"
+
+###########################################################################
+
+############################  Ooredoo ########################
+
+  utter_oreedoo:
+    - text: "Parfait! Comment puis-je vous aider au sujet de votre opérateur?"
+      buttons:
+        - title: "Offres"
+          payload: "/offres_ored"
+        - title: "Offre pour la la fête des Mères"
+          payload: "/offre_fete_des_meres_ored"
+        - title: "Jeux"
+          payload: "/jeux_ored"
+
+  utter_oreedoo_en:
+    - text: "Perfect! How may I assist you ?"
+      buttons:
+        - title: "Offers"
+          payload: "/offres_ored_en"
+        - title: "Mother’s Day offers"
+          payload: "/offre_fete_des_meres_ored_en"
+        - title: "Games"
+          payload: "/jeux_ored_en"
+
+###########################################################################
+
+  utter_offres_ored:
+    - text: "Nos offres proposées :\n
+             - Rejoignez Ooredoo EZ, la première plateforme E-sports de Tunisie et participez aux tournois et compétitions les plus forts. Si vous voulez pour plus d'informations, rendez-vous sur le site de Ooredoo.\n
+             - Grace à notre partenaire UIB, vous pouvez choisir votre smartphone favori dans notre e-shop et payer confortablement sans dépôt jusqu'à 2 ans.\n
+             - Vous aimez partir en voyage ? avec Roaming Passport, vous bénéficiez de plus d'Internet et avec le même prix.\n
+             - Avec Ooredoo en 3 clics, vous pouvez régler vos factures partout et quand vous voulez, tout est plus facile avec le site de Ooredoo.\n
+             - Préparez-vous pour la Coupe du Monde et gagnez des cadeaux, du cash, des billets d'avion pour les matchs tunisiens de la Coupe du Monde et une voiture Kia Picanto.\n
+             Aimeriez-vous recevoir d'autres offres?"
+      buttons:
+        - title: "Oui, si vous avez"
+          payload: "/oui_plus_offres"
+        - title: "Non, Merci "
+          payload: "/non_plus_offres"
+
+  utter_offres_ored_en:
+    - text: "Our suggested offers :\n 
+             - Rejoignez Ooredoo EZ, la première plateforme E-sports de Tunisie et participez aux tournois et compétitions les plus forts. Si vous voulez pour plus d'informations, rendez-vous sur le site de Ooredoo.\n
+             - Thanks to our partner UIB, you can choose your favorite smartphone from our online shop and pay comfortably without deposit for a maximum of 2 years. \n
+             - Do you enjoy traveling ? Roaming Passport allows you to get more Internet for the same price.\n
+             - With Ooredoo in 3 clicks, you can pay your invoices anywhere and anytime, everything is easier with the Ooredoo website.\n
+             - Get ready for the World Cup and win gifts, money, airline tickets for Tunisian World Cup games and a Kia Picanto car.\n
+             Do you want to get more offers ?"
+      buttons:
+        - title: "Yes"
+          payload: "/oui_plus_offres_en"
+        - title: "No, Thank you "
+          payload: "/non_plus_offres_en"
+
+###########################################################################
+
+  utter_oui_plus_offres:
+    - text: "Parfait! Veuillez choisir parmi ceux-ci : \n"
+      buttons:
+        - title: "Offre Pack 4G"
+          payload: "/offre_pack_4G_ored"
+        - title: "Offre ADSL/VDSL"
+          payload: "/offre_adsl_vdsl_ored"
+        - title: "Offre DO"
+          payload: "/offre_do_ored"
+
+  utter_oui_plus_offres_en:
+    - text: "Perfect ! Please choose one of the following options: \n"
+      buttons:
+        - title: "4G Pack Offer"
+          payload: "/offre_pack_4G_ored_en"
+        - title: "ADSL/VDSL offer"
+          payload: "/offre_adsl_vdsl_ored_en"
+        - title: "DO Offer"
+          payload: "/offre_do_ored_en"
+
+###########################################################################
+
+  utter_offre_pack_4G_ored:
+    - text: "- Avec le pack 4g à 63 dinars, profitez d'une connexion Internet de 35 Go pendant deux mois.N'attendez pas et visitez-nous auprès de l'agence la plus proche de chez vous pour ne pas manquer l'offre.\n
+             - Avec le pack 4g à 90 dinars, profitez d'une connexion Internet de 55 Go pendant deux mois.N'attendez pas et visitez-nous auprès de l'agence la plus proche de chez vous pour ne pas manquer l'offre.\n
+             - Avec le pack 4g à 115 dinars, profitez d'une connexion Internet de 70 Go pendant deux mois.N'attendez pas et visitez-nous auprès de l'agence la plus proche de chez vous pour ne pas manquer l'offre.\n
+             - Avec le pack 4g à 164 dinars, profitez d'une connexion Internet de 100 Go pendant deux mois.N'attendez pas et visitez-nous auprès de l'agence la plus proche de chez vous pour ne pas manquer l'offre.\n
+             Voulez-vous poser d'autres questions, Monsieur/Madame:"
+      buttons:
+        - title: "Oui"
+          payload: "/oui_question_offre_pack4G_ored"
+        - title: "Non"
+          payload: "/non_pas_autre_chose"
+
+  utter_offre_pack_4G_ored_en:
+    - text: "- With the 4g pack for 63 dinars, enjoy an Internet connection of 35 GO during two months. Do not wait and visit us at the nearest agency in order not to miss the offer.\n
+             - With the 4g pack for 90 dinars, enjoy an Internet connection of 55 GO during two months. Do not wait and visit us at the nearest agency in order not to miss the offer.\n
+             - With the 4g pack for 115 dinars, enjoy an Internet connection of 70 GO during two months. Do not wait and visit us at the nearest agency in order not to miss the offer. \n
+             - With the 4g pack for 164 dinars, enjoy an Internet connection of 100 GO during two months. Do not wait and visit us at the nearest agency in order not to miss the offer.\n
+             Are there any further questions, Mrs/Mr ?"
+      buttons:
+        - title: "Yes"
+          payload: "/oui_question_offre_pack4G_ored_en"
+        - title: "No"
+          payload: "/non_pas_autre_chose_en"
+
+###########################################################################
+
+  utter_oui_question_offre_pack4G_ored:
+    - text: "Si vous êtes bloqué pour faire votre choix entre les divers packs offerts.S'il vous plaît consulter le [site](ore.do/4g-box) pour être en mesure de prendre une décision et d'avoir plus de détails sur l'offre.\n
+             Ai-je bien répondu à votre question?"
+      buttons:
+        - title: "Oui"
+          payload: "/oui_bien_repondu"
+        - title: "Non"
+          payload: "/non_pas_repondu"
+
+  utter_oui_question_offre_pack4G_ored_en:
+    - text: "If you are stuck to choose between the different packages offered, Please visit the [website](ore.do/4g-box) to make a decision and get more details about the deal.\n
+             Has that answered your question ?"
+      buttons:
+        - title: "Yes"
+          payload: "/oui_bien_repondu_en"
+        - title: "No"
+          payload: "/non_pas_repondu_en"
+
+###########################################################################
+
+  utter_non_pas_repondu:
+    - text: "Veuillez formuler votre question de nouveau ou consultez les différents types de packs via ce [lien](ore.do/4g-box)."
+
+  utter_non_pas_repondu_en:
+    - text: "Please rephrase your question or check the different types of packs via this [link](ore.do/4 g-box)."
+
+###########################################################################
+
+  utter_offre_adsl_vdsl_ored:
+    - text: "- Bénéficiez du meilleur internet avec les prix les plus bas de Tunisie avec ADSL JDID, à partir de 29,4 dinars.Pour en savoir plus, visitez notre [site Web](ore.do/adsljdid) ou visitez le magasin le plus près de chez vous.\n
+             - Bénéficiez du meilleur internet avec les prix les plus bas de Tunisie avec VDSL FASTNET, à partir de 47,4 dinars.Pour en savoir plus, visitez notre [site Web](ore.do/vdslfastnet) ou visitez le magasin le plus près de chez vous.\n"
+
+  utter_offre_adsl_vdsl_ored_en:
+    - text: "- Benefit from the best internet with the lowest prices in Tunisia with ADSL JDID, from 29.4 dinars. To find out more, visit our [website](ore.do/adsljdid) or visit the shop closest to you.\n
+             - Benefit from the best internet with the lowest prices in Tunisia with VDSL FASTNET, from 47.4 dinars. To find out more, visit our [website](ore.do/vdslfastnet) or visit the shop closest to you.\n"
+
+###################################################################################
+
+  utter_offre_do_ored:
+    - text: "- Devenez un DO et vous aurez l'opportunité de mélanger vos forfaits comme vous voulez forfait internet, appels, jeux...Pour plus de détails, consultez le [site](onelink.to/myooredootn).\n
+             - Devenez un DO et bénéficiez de 15% de remise sur Technogym avec Club Privilege.Il ne vous reste plus qu'à vous entraîner. Si vous voulez savoir plus d'informations, cliquez sur ce [lien](onelink.to/myooredootn).\n"
+
+  utter_offre_do_ored_en:
+    - text: "- Become a DO and you will be able to mix and match your packages as you like Internet package, calls, games... For more information, refer to [site](onelink.to/myooredootn).\n
+             - Become a DO and get 15% Technogym discount with Club Privilege, All you need to do is work out. To find out more, click on this [link](onelink.to/myooredootn)."
+
+###################################################################################
+
+  utter_offre_fete_des_meres_ored:
+    - text: "- Prenez une photo avec votre chere mere, et bénéficiez de 30% de réduction sur le service Photo by Ooredoo, et imprimez-les à la fête des Mères.\n
+             - 10 million in cash, two iPhones 13 and many more Mother's Day awards. \n
+             Avez-vous des questions monsieur/madame ? \n"
+      buttons:
+        - title: "Oui"
+          payload: "/oui_question_offre_fete_mere"
+        - title: "Non"
+          payload: "/non_autre_question"
+
+  utter_offre_fete_des_meres_ored_en:
+    - text: "- Take a picture with your dear mother and receive a 30% discount on the Photo by Ooredoo service and print it on Mother's Day.\n
+             - 10 millions d'argent, deux iPhone 13 et de nombreux autres cadeaux à gagner à la fête des Mères.\n
+             Are there any further questions, Mrs/Mr ?"
+      buttons:
+        - title: "Yes"
+          payload: "/oui_question_offre_fete_mere_en"
+        - title: "No"
+          payload: "/non_autre_question_en"
+
+###################################################################################
+
+  utter_oui_question_fete_des_meres_ored:
+    - text: "veuillez choisir l'une des deux offres s'il vous plait.\n"
+      buttons:
+        - title: "Première Offre"
+          payload: "/question_offre_1_ored"
+        - title: "Deuxième Offre"
+          payload: "/question_offre_2_ored"
+
+  utter_oui_question_fete_des_meres_ored_en:
+    - text: "Please select one of the two options.\n"
+      buttons:
+        - title: "First Offer"
+          payload: "/question_offre_1_ored_en"
+        - title: "Second Offer"
+          payload: "/question_offre_2_ored_en"
+
+###################################################################################
+
+  utter_detail_question_offre_1_ored:
+    - text: "Pour profiter de cette offre, vous accédez à l'application My Ooredoo puis à la section multimédia, ou encore au [site](https://photo.ooredoo.tn) Ooredoo avec le code promo : Maman.\n 
+             Ai-je bien répondu à votre question?"
+      buttons:
+        - title: "Oui"
+          payload: "/oui_bien_repondu"
+        - title: "Non"
+          payload: "/non_pas_repondu"
+
+  utter_detail_question_offre_1_ored_en:
+    - text: "To take advantage of this offer, you access to the My Ooredoo app and then the multimedia section, or even the Ooredoo [site](https://photo.ooredoo.tn) with the promo code: Maman.\n 
+             Has that answered your question ?"
+      buttons:
+        - title: "Yes"
+          payload: "/oui_bien_repondu_en"
+        - title: "No"
+          payload: "/non_pas_repondu_en"
+
+###################################################################################
+
+  utter_detail_question_offre_2_ored:
+    - text: "Pour profiter de cette offre, vous n'avez qu'à recharger votre numéro de 3 dinars ou plus, du 26 au 28 mai afin de participer à la loterie le 30 mai, vous gagnerez et faire gagner votre mrere avec vous. Si vous souhaitez augmenter vos chances de gagner 10 fois chargez depuis l'app My Ooredoo [lien](onelink.to/myooredootn) ou Eddenyalive [lien](ore.do/eddenyalive).\n
+             Ai-je bien répondu à votre question ?"
+      buttons:
+        - title: "Oui"
+          payload: "/oui_bien_repondu"
+        - title: "Non"
+          payload: "/non_pas_repondu"
+
+  utter_detail_question_offre_2_ored_en:
+    - text: "To take advantage of this offer, you only have to charge your number with 3 dinars or more, from May 26 to 28 in order to participate in the lottery on May 30, you will win and make your mother win with you. If you want to increase your chances of winning 10 times, load from the My Ooredoo app [link](onelink.to/myooredootn) or Eddenyalive [link](ore.do/eddenyalive).\n
+             Has that answered your question ?"
+      buttons:
+        - title: "Yes"
+          payload: "/oui_bien_repondu_en"
+        - title: "No"
+          payload: "/non_pas_repondu_en"
+
+###################################################################################
+
+  utter_non_pas_repondu_ored:
+    - text: "Veuillez consulter nôtre [site web](https://www.ooredoo.tn/Personal/fr/accueil) officiel dont tu trouveras plus de détails."
+
+  utter_non_pas_repondu_ored_en:
+    - text: "Please check out our official [website](https://www.ooredoo.tn/Personal/fr/accueil) for more details."
+
+###################################################################################
+
+  utter_jeux_ored:
+    - text: "- Vous aimeriez gagner avec nous ? vous n'avez pas à vous inquiéter, le bénéfice est toujours là: 5 millions tous les vendredis et 15 millions tous les mois.\n
+             - Votre passion pour le football vous rapportera des millions d'argent. Jouez au quiz Fiha Goal avec nous et gagnez des millions de dollars.Suivez-nous pour d'autres surprises et cadeaux.\n
+             - Visitez la Huawei App Gallery et téléchargez PUBG avant le 2 juin pour obtenir des coupons et des cartes-cadeaux.Tous les détails de l'offre sont disponibles via ce [lien](https://bit.ly/3wucntA).\n
+             - A l'occasion des Jeux de la Méditerranée, nous vous proposons de remporter les meilleurs cadeaux. Répondez au plus grand nombre de questions que vous pouvez en commentaire, pour que vous participerez au tirage au sort et figurerez parmi les gagnants.\n
+             - Ne ratez pas les cadeaux de jackpot. Plus 50000 gagnants sur My Ooredoo, si vous n'avez pas encore téléchargé l'application ici est le [lien](onelink.to/myooredootn)\n
+             Cliquer en dessous pour revenir au menu principal"
+      buttons:
+        - title: "Menu principal"
+          payload: "/oui_menu_principal"
+
+  utter_jeux_ored_en:
+    - text: "- If you want to win with us, don't worry, profit is always there: 5 million every Friday and 15 million every month.\n
+             - Your passion for football will give you millions, Play Fiha Goal quiz with us and win cash. Follow us for more surprises and gifts.\n
+             - Visit the Huawei App Gallery and download PUBG by June 2nd for vouchers and gift cards. Details of the offer can be found here (https://bit.ly/3wucntA).\n
+             -  - On the occasion of the Mediterranean Games, we invite you to win the best gifts. Answer as many questions as you can in the comments, so that you will be entered into the draw and be among the winners.\n
+             - Don't miss the jackpot giveaway ! More than 50,000 winners on My Ooredoo app, if you haven't downloaded the app yet, this is the [link](onelink.to/myooredootn)\n             
+             Click below to navigate back to the main menu"
+      buttons:
+        - title: "Main Menu"
+          payload: "/oui_menu_principal_en"
+
+###################################################################################
+
+############################  Tunisie Télècom ########################
+
+  utter_tunisie_télécom:
+    - text: "Parfait! Sur quel sujet puis-je vous aider par rapport à votre operateur?"
+      buttons:
+        - title: "Offres"
+          payload: "/offres_tt"
+        - title: "Offre pour la la fête des Mères "
+          payload: "/offre_fete_des_meres_tt"
+        - title: "Jeux"
+          payload: "/jeux_tt"
+        - title: "Devinette"
+          payload: "/devinette_tt"
+        - title: "d'autres informations"
+          payload: "/autres_informations_tt"
+
+  utter_tunisie_télécom_en:
+    - text: "Perfect! How may I assist you ?"
+      buttons:
+        - title: "Offers"
+          payload: "/offres_tt_en"
+        - title: "Mother’s Day offer"
+          payload: "/offre_fete_des_meres_tt_en"
+        - title: "Games"
+          payload: "/jeux_tt_en"
+        - title: "Riddles"
+          payload: "/devinette_tt_en"
+        - title: "More information"
+          payload: "/autres_informations_tt_en"
+
+###################################################################################
+
+  utter_offres_tt:
+    - text: "Nos offres proposées :\n 
+             - Vous voulez suivre vos enfants afin de vous assurer qu'ils sont toujours à jour. Tunisie Télécom a le service dont vous avez besoin: Service rafi9ni (m'accompagner) qui vous permet de revoir et de répéter tous les sujets et leçons avec votre enfant. Pour ce faire, activons ce code *77*1. \n
+             - Si vous souhaitez rester toujours joignable et connecté où que vous soyez, vous n'avez qu'à composer le *17*1* et suivre le reste des étapes.\n
+             - Avec le nouveau service Ehdianet de l'application my TT, vous pouvez distribuer des Giga et demander des forfaits Internet de vos amis.\n 
+             - Si vous souhaitez vous connecter au réseau 4g le plus rapide de Tunisie et choisir les forfaits internet qui vous conviennent. Procédez en composant *140# et suivez les autres étapes.\n
+             - Vous voulez acheter Internet et les minutes de téléphone avec les meilleurs prix? Activez simplement cette nouvelle option Hadranet.\n
+             Vous souhaitez poser des questions concernant les offres proposées ?"
+      buttons:
+        - title: "Oui"
+          payload: "/oui_question_offres"
+        - title: "Non, Merci"
+          payload: "/non_pas_questions"
+
+  utter_offres_tt_en:
+    - text: "Our suggested offers :\n
+            - Want to follow up with your kids to ensure they are always up to date in their studies? Tunisia Telecom has the service you need Service be with me that allows you to examine and repeat all topics and lessons with your child. This is done by activating this code *77*1.\n
+            - If you wish to be always reachable and connected from anywhere, simply enter *17*1* and follow the rest of the steps.\n
+            - With the new Ehdianet service in the my TT app, you can distribute Giga and ask your friends for Internet packs.\n
+            - If you would like to connect to the fastest 4g network in Tunisia and choose the internet packages that are suitable for you. Proceed with *140# and follow the other steps.\n
+            - Want to buy internet and phone minutes with the best prices  Just enable this new Hadranet option.\n
+            Are you interested in asking questions about these offers ?"
+      buttons:
+        - title: "Yes"
+          payload: "/oui_question_offres_en"
+        - title: "No, Thank you"
+          payload: "/non_pas_questions_en"
+
+###################################################################################
+
+  utter_offre_fete_des_meres_tt:
+    - text: "- Du 23 mai au 26 mai, rechargez 1 dinares ou plus d'internet sur l'application myTT. Ecrivez le code que vous avez reçu du [site Web](jibelcode.tn) au bon endroit pour participer à la loterie et gagner Huawei Nova 9 et rendre votre maman heureuse.\n
+             - Tout le monde a mille raisons d'apprécier sa mère et de la rendre heureuse. Rejoignez le jeu de la fête des mères. Remerciez-la et identifiez-la dans les commentaires pour  gagner un smartphone.\n
+             Cliquer en dessous pour revenir au menu principal"
+      buttons:
+        - title: "Menu principal"
+          payload: "/oui_menu_principal"
+
+  utter_offre_fete_des_meres_tt_en:
+    - text: "- From 23 to 26 May, bill 1 or more dinars of Internet on the myTT app. Write the code you got from [website](jibelcode.tn) in the right place to participate in the lottery and win Huawei Nova 9 and make your mother happy.\n
+             - Everyone has a thousand reasons for appreciating and satisfying his mother. Join the Mother's Day game, thank her and tag her in reviews for winning a smartphone.\n
+             Click below to navigate back to the main menu."
+      buttons:
+        - title: " Main Menu"
+          payload: "/oui_menu_principal_en"
+
+###################################################################################
+
+  utter_jeux_tt:
+    - text: "- Si vous êtes doué et fan de musique, jouez au jeu Edenya fan et vous allez gagner 30000 dinars chaque mois.\n
+    
+             - Participez à Play Yalla avec Tunisia Telecom et Radio FM et soyez l'un des vainqueurs d'une Kia Rio d'une valeur de 50 mille dinars. ou gagner 100 dinars pour 600 dinars.\n
+            
+             - Si vous connaissez le jeu Hal Ta3lem, Tenter votre chance et gagner 25 millions chaque mois.\n
+             
+             - Profitez d’un accès illimité à vos jeux préférés sur Gameloft.\n
+            
+              Vous avez des questions sur les jeux proposés ?"
+      buttons:
+        - title: "Oui"
+          payload: "/oui_question_jeu"
+        - title: "Non"
+          payload: "/non_autre_question"
+
+  utter_jeux_tt_en:
+    - text: "- If you're talented and love music, play the game Edenya fan and you'll win 30,000 dinars each month.\n
+             - Take part in Play Yalla with Tunisie Telecom and Radio FM and become a winner of. a Kia Rio with a value of 50 thousand dinars, or earn between 100 and 600 dinars.\n
+             - If you're familiar with the game Hal Ta3lem, take your shot and win 2.5 million each month.\n
+             - Get unlimited access to your favorites game Gameloft. \n
+             Do you have any questions related to the proposed games ?"
+      buttons:
+        - title: "Yes"
+          payload: "/oui_question_jeu_en"
+        - title: "No"
+          payload: "/non_autre_question_en"
+
+###################################################################################
+
+  utter_oui_question_jeu_tt:
+    - text: "S'il vous plaît choisir parmi les jeux que vous souhaitez poser des questions.\n"
+      buttons:
+        - title: "Première Offre"
+          payload: "/question_jeu_1_tt"
+        - title: "Deuxième Offre"
+          payload: "/question_jeu_2_tt"
+        - title: "Troisième Offre"
+          payload: "/question_jeu_3_tt"
+        - title: "Quatrième Offre"
+          payload: "/question_jeu_4_tt"
+
+  utter_oui_question_jeu_tt_en:
+    - text: "Please select which games you want to ask questions about.\n"
+      buttons:
+        - title: "First Offer"
+          payload: "/question_jeu_1_tt_en"
+        - title: "Second Offer"
+          payload: "/question_jeu_2_tt_en"
+        - title: "Third Offer"
+          payload: "/question_jeu_3_tt_en"
+        - title: "Fourth Offer"
+          payload: "/question_jeu_4_tt_en"
+
+###################################################################################
+
+  utter_question_jeu_1_tt:
+    - text: "Que souhaitez-vous savoir sur le jeu Edenya fan ?"
+
+  utter_question_jeu_1_tt_en:
+    - text: "What do you want to find out about the game Edenya fan ?"
+
+###################################################################################
+
+  utter_detail_question_jeu_1_tt:
+    - text: "Composez le *408*1# et suivez le reste de la procédure ou visitez le [site Web](https://edenyafan.com). \n
+             Ai-je bien répondu à votre question?"
+      buttons:
+        - title: "Oui"
+          payload: "/oui_bien_repondu"
+        - title: "Non"
+          payload: "/non_pas_repondu"
+
+  utter_detail_question_jeu_1_tt_en:
+    - text: "Press *408*1# and follow the rest of the process or visit the [Web site](https://edenyafan.com). \n
+             Has that answered your question ?"
+      buttons:
+        - title: "Yes"
+          payload: "/oui_bien_repondu_en"
+        - title: "No"
+          payload: "/non_pas_repondu_en"
+
+###################################################################################
+
+  utter_non_pas_repondu_jeu1_tt:
+    - text: "Veuillez consulter le [lien] direct vers le jeu (https://edenyafan.com) officiel dont tu trouveras tous les détails."
+      buttons:
+        - title: "Menu principal"
+          payload: "/oui_menu_principal"
+
+  utter_non_pas_repondu_jeu1_tt_en:
+    - text: "Please refer to the direct [link] to the official game (https://edenyafan.com) where you will find all the details."
+      buttons:
+        - title: "Main Menu"
+          payload: "/oui_menu_principal_en"
+
+###################################################################################
+
+  utter_question_jeu_2_tt:
+    - text: "Que souhaitez-vous savoir sur le 2éme jeu Play Yalla ?"
+
+  utter_question_jeu_2_tt_en:
+    - text: "What do you want to find out about the game Play Yalla ?"
+
+###################################################################################
+
+  utter_detail_question_jeu_2_tt:
+    - text: "Composez *600*1 avec votre numéro TT et suivez le reste de la procédure"
+      buttons:
+        - title: "Menu principal"
+          payload: "/oui_menu_principal"
+
+  utter_detail_question_jeu_2_tt_en:
+    - text: "Tap *600*1 with your TT number and follow the rest of the procedure"
+      buttons:
+        - title: "Main Menu"
+          payload: "/oui_menu_principal_en"
+
+###################################################################################
+
+  utter_question_jeu_3_tt:
+    - text: "Que souhaitez-vous savoir sur le jeu Hal Ta3lem ?"
+
+  utter_question_jeu_3_tt_en:
+    - text: "What do you want to find out about the game Hal Ta3lem ?"
+
+###################################################################################
+
+  utter_detail_question_jeu_3_tt:
+    - text: "Composez *408*2# ou entrez sur le [site](HalTa3lem.com). \n
+             Ai-je bien répondu à votre question?"
+      buttons:
+        - title: "Oui"
+          payload: "/oui_bien_repondu"
+        - title: "Non"
+          payload: "/non_pas_repondu"
+
+  utter_detail_question_jeu_3_tt_en:
+    - text: "Press *408*2# or go to [site] (HalTa3lem.com). \n
+             Has that answered your question ?"
+      buttons:
+        - title: "Yes"
+          payload: "/oui_bien_repondu_en"
+        - title: "No"
+          payload: "/non_pas_repondu_en"
+
+###################################################################################
+
+  utter_non_pas_repondu_jeu3_tt:
+    - text: "Veuillez consulter le [lien] direct vers le jeu (HalTa3lem.com) officiel dont tu trouveras tous les détails."
+
+  utter_non_pas_repondu_jeu3_tt_en:
+    - text: "Please check out the [link] to the official game (HalTa3lem.com) where you can find all the details."
+
+###################################################################################
+
+  utter_question_jeu_4_tt:
+    - text: "Que souhaitez-vous savoir sur le jeu Gameloft ?"
+
+  utter_question_jeu_4_tt_en:
+    - text: "What do you want to find out about the game Gameloft ?"
+
+###################################################################################
+
+  utter_detail_question_jeu_4_tt:
+    - text: "Composez *407# avec votre numéro TT et suivez le reste de la procédure"
+      buttons:
+        - title: "Menu principal"
+          payload: "/oui_menu_principal"
+
+  utter_detail_question_jeu_4_tt_en:
+    - text: "Type *407# with your TT number and go through the rest of the procedure."
+      buttons:
+        - title: "Main Menu"
+          payload: "/oui_menu_principal_en"
+
+###################################################################################
+
+  utter_autres_informations_tt:
+    - text: "- Si vous ne le savez pas encore, vous pouvez télécharger l'app my TT et recharger votre ligne à votre guise.\n
+             - Rassurez-vous et parlez avec votre opérateur télécom la minute la moins coûteuse.\n
+             - Notre fierté nationale Ons Jabeur avait pour objectif en début d’année 2022 d’atteindre le TOP 5 Et c’est FAIT… Notre championne s’est hissée à la 4ème place du classement WTA. \n"
+      buttons:
+        - title: "Merci"
+          payload: "/remerciment_info"
+
+  utter_autres_informations_tt_en:
+    - text: "- If you're not sure yet, you can download the My TT app and load your line the way you want.\n
+             - Don't worry and speak with your tunisie telecom operator with the lowest cost.\n
+             - Our national pride Ons Jabeur aimed at achieving the TOP 5 in early 2022 And it's DONE...Our champion finished fourth in the WTA standings.\n"
+      buttons:
+        - title: "Thank you"
+          payload: "/remerciment_info_en"
+
+###################################################################################
+
+  utter_remerciment_info:
+    - text: "Merci, À bientôt !"
+      buttons:
+        - title: "Menu principal"
+          payload: "/oui_menu_principal"
+
+  utter_remerciment_info_en:
+    - text: "Thank you, I'll talk to you soon!"
+      buttons:
+        - title: "Main Menu"
+          payload: "/oui_menu_principal_en"
+
+###################################################################################
+
+  utter_devinette_tt:
+    - text: "- Composez le *500*1# et répondez aux énigmes pour gagner 30 millions par mois.\n
+             - Quel est le produit qui nous emmène à la première carte de recharge? Devinez et remportez.\n
+             Devinez et gagnez avec Tunisie telecom. \n
+             Si vous disposez des questions, veuillez consultez notre [site web](https://www.tunisietelecom.tn/Fr)"
+      buttons:
+        - title: "Menu principal"
+          payload: "/oui_menu_principal"
+
+  utter_devinette_tt_en:
+    - text: "- Tap *500*1# and answer the riddles to win 30 million per month.\n
+             - What is the product that brings us to the first recharge card ? Guess and win.\n
+             Guess and win with Tunisie Telecom.
+             If you have any questions, please consult our [website](https://www.tunisietelecom.tn/Fr)"
+      buttons:
+        - title: "Main Menu"
+          payload: "/oui_menu_principal_en"
+
+###################################################################################
+
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+
+actions:
+  - action_choix_de_langue
+  - action_Box_Org
+  - action_hello_world
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

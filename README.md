@@ -5,9 +5,7 @@ Telco Bot est développé par le framework RASA. Ce chatbot peut être utilisé 
 
 Voici un exemple de conversation que vous pouvez avoir avec ce bot :
 
-![exp1](https://user-images.githubusercontent.com/47745783/185938094-1fc73719-7ac4-4d95-aeb4-44309554be24.PNG)
-
-
+![exp1](https://user-images.githubusercontent.com/47745783/185938094-1fc73719-7ac4-4d95-aeb4-44309554be24.PNG)    
 
 ![exp2](https://user-images.githubusercontent.com/47745783/185938179-6e0253be-590c-4ef0-8ca1-aff8c4850b3c.PNG)
 
@@ -23,9 +21,11 @@ Dans un environnement virtuel Python3, exécutez :
 # Exécution du bot 
 
 ### Entrainer les modéles: 
-
+```
 rasa train --config config_fr.yml 
 rasa train --config config_en.yml
+
+```
 
 ### Pour éxecuter le projet : 
 

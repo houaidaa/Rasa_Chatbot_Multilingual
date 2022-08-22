@@ -18,7 +18,7 @@ Voici un exemple de conversation que vous pouvez avoir avec ce bot :
 
 Dans un environnement virtuel Python3, exécutez :
 
-{% filename %}pip install -r requirements.txt{% endfilename %}
+> pip install -r requirements.txt
     
 # Exécution du bot 
 

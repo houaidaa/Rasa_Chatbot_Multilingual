@@ -15,16 +15,19 @@ Voici un exemple de conversation que vous pouvez avoir avec ce bot :
 ## Installer les dépendances
 
 Dans un environnement virtuel Python3, exécutez :
-
+```
 > pip install -r requirements.txt
-    
+
+```
+
 # Exécution du bot 
 
-### Entrainer les modéles: 
-```
-rasa train --config config_fr.yml 
-rasa train --config config_en.yml
+### Entrainer les modéles:
 
+```
+> rasa train --config config_fr.yml 
+
+> rasa train --config config_en.yml
 ```
 
 ### Pour éxecuter le projet : 

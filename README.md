@@ -15,8 +15,9 @@ Voici un exemple de conversation que vous pouvez avoir avec ce bot :
 ## Installer les dépendances
 
 Dans un environnement virtuel Python3, exécutez :
+
 ```
-> pip install -r requirements.txt
+ pip install -r requirements.txt
 
 ```
 
@@ -25,31 +26,41 @@ Dans un environnement virtuel Python3, exécutez :
 ### Entrainer les modéles:
 
 ```
-> rasa train --config config_fr.yml 
+ rasa train --config config_fr.yml 
 
-> rasa train --config config_en.yml
+ rasa train --config config_en.yml
 ```
 
 ### Pour éxecuter le projet : 
 
 configurez d'abord votre serveur d'action dans une fenêtre de terminal :
 
+```
 rasa run actions 
+```
 
 Ensuite, pour parler au bot, exécutez :
 
+```
 rasa shell --debug
+```
 
 # Déploiement 
 
 Pour que le déploiement fonctionne, exécutez la commande :
 
+```
 rasa run --enable-api --cors "*" 
+```
 
 Dans une autre une fenêtre de terminal :
 
+```
 python app.py 
+```
 
 Dans une autre une 3éme fenêtre de terminal :
 
+```
 rasa run actions --cors "*"
+```
